@@ -1221,42 +1221,6 @@ calathe:TransportNetwork rdf:type owl:Class .
 
 
 #################################################################
-#    Individuals
-#################################################################
-
-###  https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Grenzpunkt
-:Grenzpunkt rdf:type owl:NamedIndividual ,
-                     :AX_Grenzpunkt ;
-            :zustaendigeStelle :dienststelle ;
-            :punktkennung "12"^^xsd:string ;
-            :sonstigeEigenschaft "fewfe" ;
-            :vermarkung_Marke 4454 .
-
-
-###  https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#a
-:a rdf:type owl:NamedIndividual ,
-            :AP_PTO ;
-   :dientZurDarstellungVon :b ,
-                           :c .
-
-
-###  https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#b
-:b rdf:type owl:NamedIndividual ,
-            :AX_Weg .
-
-
-###  https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#c
-:c rdf:type owl:NamedIndividual ,
-            :AX_Landwirtschaft .
-
-
-###  https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dienststelle
-:dienststelle rdf:type owl:NamedIndividual ,
-                       :AX_Dienststelle_Schluessel ;
-              :stelle "4342"^^xsd:string .
-
-
-#################################################################
 #    General axioms
 #################################################################
 

@@ -1856,64 +1856,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Grenzpunkt -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Grenzpunkt">
-        <rdf:type rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Grenzpunkt"/>
-        <zustaendigeStelle rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dienststelle"/>
-        <punktkennung rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12</punktkennung>
-        <sonstigeEigenschaft>fewfe</sonstigeEigenschaft>
-        <vermarkung_Marke rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4454</vermarkung_Marke>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#a -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#a">
-        <rdf:type rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PTO"/>
-        <dientZurDarstellungVon rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#b"/>
-        <dientZurDarstellungVon rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#c"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#b -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#b">
-        <rdf:type rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Weg"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#c -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#c">
-        <rdf:type rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Landwirtschaft"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dienststelle -->
-
-    <owl:NamedIndividual rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dienststelle">
-        <rdf:type rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel"/>
-        <stelle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4342</stelle>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // General axioms
     //
     ///////////////////////////////////////////////////////////////////////////////////////
