@@ -1,4 +1,22 @@
 <?xml version="1.0"?>
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+	<!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY geo "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY ladm "http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#" >
+    <!ENTITY ngeo "http://geovocab.org/geometry#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY calathe "http://www.cadastralvocabulary.org/CaLAThe/">
+    <!ENTITY alkis "http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#" >
+]>
+
 <rdf:RDF xmlns="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#"
      xml:base="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
