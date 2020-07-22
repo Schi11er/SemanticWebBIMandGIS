@@ -1,0 +1,2363 @@
+# baseURI: http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/shacl/alkis_shapes.ttl
+# imports: http://datashapes.org/dash
+# imports: http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl
+
+@prefix : <http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/shacl/alkis_shapes.ttl#> .
+@prefix calathe: <http://www.cadastralvocabulary.org/CaLAThe/> .
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix ladm: <http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#> .
+@prefix ngeo: <http://geovocab.org/geometry#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix alkis: <http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#> .
+
+
+:AA_Lebenszeitintervall-beginnt
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AA_Lebenszeitintervall ;
+	sh:property [
+		sh:path alkis:beginnt ;
+		sh:datatype xsd:dateTime ;
+  ].
+  
+:AA_Lebenszeitintervall-endet
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AA_Lebenszeitintervall ;
+	sh:property [
+		sh:path alkis:endet ;
+		sh:datatype xsd:dateTime ;
+    ].
+
+:AA_Modellart-advStandardModell	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AA_Modellart ;
+	sh:property [
+		sh:path alkis:advStandardModell ;
+		sh:datatype xsd:string ;
+	] .
+	
+:ALKIS_Klasse-anlass
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:ALKIS_Klasse ;
+	sh:property [
+		sh:path alkis:anlass ;
+		sh:datatype xsd:string ;
+	] .
+
+:ALKIS_Klasse-hasGeometry
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:ALKIS_Klasse ;
+	sh:property [
+		sh:path geo:hasGeometry ;
+		sh:class geo:Geometry ;
+	] .
+
+:ALKIS_Klasse-identifier
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:ALKIS_Klasse ;
+	sh:property [
+		sh:path alkis:identifier ;
+		sh:datatype xsd:string ;
+	] .
+
+:ALKIS_Klasse-lebenszeitintervall
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:ALKIS_Klasse ;
+	sh:property [
+		sh:path alkis:lebenszeitintervall ;
+		sh:class alkis:AA_Lebenszeitintervall ;
+	] .
+
+:ALKIS_Klasse-modellart
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:ALKIS_Klasse ;
+	sh:property [
+		sh:path alkis:modellart ;
+		sh:class alkis:AA_Modellart ;
+	] .	
+
+:AP_Darstellung-art	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_Darstellung ;
+	sh:property [
+		sh:path alkis:art ;
+		sh:datatype xsd:string ;
+	] .
+
+:AP_Darstellung-dientZurDarstellungVon	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_Darstellung ;
+	sh:property [
+		sh:path alkis:dientZurDarstellungVon ;
+		sh:or (
+		[
+			sh:class alkis:AX_Landwirtschaft ;
+		]
+		[
+			sh:class alkis:AX_SportFreizeitUndErholungsflaeche ;
+		]
+		[
+			sh:class alkis:AX_StehendesGewaesser ;
+		]
+		) ;
+	] .
+	
+:AP_Darstellung-positionierungsregel
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_Darstellung ;
+	sh:property [
+		sh:path alkis:positionierungsregel ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AP_Darstellung-signaturnummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_Darstellung ;
+	sh:property [
+		sh:path alkis:signaturnummer ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AP_GPO-art	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_GPO ;
+	sh:property [
+		sh:path alkis:art ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AP_GPO-darstellungsprioritaet	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_GPO ;
+	sh:property [
+		sh:path alkis:darstellungsprioritaet ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AP_GPO-dientZurDarstellungVon	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_GPO ;
+	sh:property [
+		sh:path alkis:dientZurDarstellungVon ;
+		sh:or (
+		[
+			sh:class alkis:AX_Bodenschaetzung ;
+		]
+		[
+			sh:class alkis:AX_Flurstueck ;
+		]
+		[
+			sh:class alkis:AX_GemarkungsteilFlur ;
+		]
+		[
+			sh:class alkis:AX_GrablochDerBodenschaetzung ;
+		]
+		[
+			sh:class alkis:AX_LagebezeichnungOhneHausnummer ;
+		]
+		) ;
+	] .	
+	
+:AP_GPO-signaturnummer		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_GPO ;
+	sh:property [
+		sh:path alkis:signaturnummer ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AP_PPO-skalierung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_PPO ;
+	sh:property [
+		sh:path alkis:skalierung ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AP_PTO-drehwinkel
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_PTO ;
+	sh:property [
+		sh:path alkis:drehwinkel ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AP_TPO-fontSperrung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_TPO ;
+	sh:property [
+		sh:path alkis:fontSperrung ;
+		sh:datatype xsd:double ;
+	] .
+
+:AP_TPO-horizontaleAusrichtung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_TPO ;
+	sh:property [
+		sh:path alkis:horizontaleAusrichtung ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AP_TPO-schriftinhalt	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_TPO ;
+	sh:property [
+		sh:path alkis:schriftinhalt ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AP_TPO-skalierung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_TPO ;
+	sh:property [
+		sh:path alkis:skalierung ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AP_TPO-vertikaleAusrichtung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AP_TPO ;
+	sh:property [
+		sh:path alkis:vertikaleAusrichtung ;
+		sh:datatype xsd:string ;
+	] .
+  
+:AX_AndereFestlegungNachWasserrecht-nummer
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_AndereFestlegungNachWasserrecht ;
+	sh:property [
+		sh:path alkis:nummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Anschrift-bestimmungsland	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:bestimmungsland ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Anschrift-hausnummer		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:hausnummer ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Anschrift-ort_Post		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:ort_Post ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Anschrift-postleitzahlPostzustellung			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:postleitzahlPostzustellung ;
+		sh:datatype xsd:string ;
+	] .
+		
+:AX_Anschrift-qualitaetsangaben		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQOhneDatenerhebung ;
+	] .
+	
+:AX_Anschrift-strasse			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:strasse ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Anschrift-telefon			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:telefon ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Anschrift-weitereAdressen			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anschrift ;
+	sh:property [
+		sh:path alkis:weitereAdressen ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Anteil-nenner
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anteil ;
+	sh:property [
+		sh:path alkis:nenner ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Anteil-zaehler	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Anteil ;
+	sh:property [
+		sh:path alkis:zaehler ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Aufnahmepunkt-hat	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Aufnahmepunkt ;
+	sh:property [
+		sh:path alkis:hat ;
+		sh:class alkis:AX_Sicherungspunkt ;
+	] .
+
+:AX_Bahnverkehr-bahnkategorie
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bahnverkehr ;
+	sh:property [
+		sh:path alkis:bahnkategorie ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bahnverkehr-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bahnverkehr ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:class alkis:AX_Lagebezeichnung ;
+	] .
+
+:AX_Bahnverkehr-nummerDerBahnstrecke	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bahnverkehr ;
+	sh:property [
+		sh:path alkis:nummerDerBahnstrecke ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Bahnverkehr-zweitname	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bahnverkehr ;
+	sh:property [
+		sh:path alkis:zweitname ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_BauRaumOderBodenordnungsrecht-datumAnordnung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauRaumOderBodenordnungsrecht ;
+	sh:property [
+		sh:path alkis:datumAnordnung ;
+		sh:datatype xsd:date ;
+	] .
+	
+:AX_Bauteil-bauart
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bauteil ;
+	sh:property [
+		sh:path alkis:bauart ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Bauteil-baujahr
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bauteil ;
+	sh:property [
+		sh:path alkis:baujahr ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Bauteil-dachform	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bauteil ;
+	sh:property [
+		sh:path alkis:dachform ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Bauteil-durchfahrtshoehe	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bauteil ;
+	sh:property [
+		sh:path alkis:durchfahrtshoehe ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Bauteil-lageZurErdoberflaeche	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bauteil ;
+	sh:property [
+		sh:path alkis:lageZurErdoberflaeche ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_BauwerkOderAnlageFuerIndustrieUndGewerbe-objekthoehe	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkOderAnlageFuerIndustrieUndGewerbe ;
+	sh:property [
+		sh:path alkis:objekthoehe ;
+		sh:datatype xsd:double ;
+	] .
+
+:AX_BauwerkOderAnlageFuerSportFreizeitUndErholung-sportart
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkOderAnlageFuerSportFreizeitUndErholung ;
+	sh:property [
+		sh:path alkis:sportart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben-bauwerksfunktion
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	sh:property [
+		sh:path alkis:bauwerksfunktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben-name	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	sh:property [
+		sh:path alkis:name ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben-qualitaetsangaben	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben-zustand	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	sh:property [
+		sh:path alkis:zustand ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bergbaubetrieb-abbaugut
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bergbaubetrieb ;
+	sh:property [
+		sh:path alkis:abbaugut ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bergbaubetrieb-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bergbaubetrieb ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:class alkis:AX_Lagebezeichnung ;
+	] .
+
+:AX_BesondereFlurstuecksgrenze-artDerFlurstuecksgrenze
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BesondereFlurstuecksgrenze ;
+	sh:property [
+		sh:path alkis:artDerFlurstuecksgrenze ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_BesondereGebaeudelinie-beschaffenheit
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_BesondereGebaeudelinie ;
+	sh:property [
+		sh:path alkis:beschaffenheit ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bewertung-klassifizierung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bewertung ;
+	sh:property [
+		sh:path alkis:klassifizierung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bewertung-qualitaetsangaben	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bewertung ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+
+:AX_Bodenschaetzung-ackerzahlOderGruenlandzahl	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:ackerzahlOderGruenlandzahl ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-bodenart		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:bodenart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-bodenzahlOderGruenlandgrundzahl		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:bodenzahlOderGruenlandgrundzahl ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-entstehungsartOderKlimastufeWasserverhaeltnisse		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:entstehungsartOderKlimastufeWasserverhaeltnisse ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-jahreszahl		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:jahreszahl ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-kulturart		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:kulturart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-sonstigeAngaben		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:sonstigeAngaben ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Bodenschaetzung-zustandsstufeOderBodenstufe		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bodenschaetzung ;
+	sh:property [
+		sh:path alkis:zustandsstufeOderBodenstufe ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Buchung_HistorischesFlurstueck-laufendeNummerDerBuchungsstelle	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchung_HistorischesFlurstueck ;
+	sh:property [
+		sh:path alkis:laufendeNummerDerBuchungsstelle ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Buchungsblatt-blattart
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblatt ;
+	sh:property [
+		sh:path alkis:blattart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Buchungsblatt-buchungsblattbezirk	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblatt ;
+	sh:property [
+		sh:path alkis:buchungsblattbezirk ;
+		dash:hasValueWithClass alkis:AX_Buchungsblattbezirk_Schluessel ;
+		sh:minCount 1 ;
+	] .
+
+:AX_Buchungsblatt-buchungsblattkennzeichen	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblatt ;
+	sh:property [
+		sh:path alkis:buchungsblattkennzeichen ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Buchungsblatt-buchungsblattnummerMitBuchstabenerweiterung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblatt ;
+	sh:property [
+		sh:path alkis:buchungsblattnummerMitBuchstabenerweiterung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Buchungsblatt-gehoertZu	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblatt ;
+	sh:property [
+		sh:path alkis:gehoertZu ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:AX_Buchungsblattbezirk-buchungsblattbezirk_schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblattbezirk ;
+	sh:property [
+		sh:path alkis:buchungsblattbezirk_schluessel ;
+		sh:class alkis:AX_Buchungsblattbezirk_Schluessel ;
+	] .
+
+:AX_Buchungsblattbezirk-gehoertZu		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblattbezirk ;
+	sh:property [
+		sh:path alkis:gehoertZu ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:AX_Buchungsblattbezirk_Schluessel-bezirk
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsblattbezirk_Schluessel ;
+	sh:property [
+		sh:path alkis:bezirk ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Buchungsstelle-an
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:an ;
+		sh:class alkis:AX_Buchungsstelle ;
+	] .
+
+:AX_Buchungsstelle-beschreibungDesSondereigentums
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:beschreibungDesSondereigentums ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Buchungsstelle-beziehtSichAuchAuf	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:beziehtSichAuchAuf ;
+		sh:class alkis:AX_Buchungsblatt ;
+	] .
+
+:AX_Buchungsstelle-buchungsart	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:buchungsart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Buchungsstelle-durch	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:durch ;
+		sh:class alkis:AX_Buchungsstelle ;
+	] .
+
+:AX_Buchungsstelle-istBestandteilVon	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:istBestandteilVon ;
+		sh:class alkis:AX_Buchungsblatt ;
+	] .
+
+:AX_Buchungsstelle-laufendeNummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:laufendeNummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Buchungsstelle-nummerImAufteilungsplan	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:nummerImAufteilungsplan ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Buchungsstelle-verweistAuf	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:verweistAuf ;
+		sh:class alkis:AX_Flurstueck ;
+	] .
+
+:AX_Buchungsstelle-zu	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Buchungsstelle ;
+	sh:property [
+		sh:path alkis:zu ;
+		sh:class alkis:AX_Buchungsstelle ;
+	] .
+
+:AX_Bundesland-bundesland_schluessel
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bundesland	 ;
+	sh:property [
+		sh:path alkis:bundesland_schluessel ;
+		sh:class alkis:AX_Bundesland_Schluessel ;
+	] .
+	
+:AX_Bundesland_Schluessel-land
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Bundesland_Schluessel ;
+	sh:property [
+		sh:path alkis:land ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_DQMitDatenerhebung-herkunft	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQMitDatenerhebung ;
+	sh:property [
+		sh:path alkis:herkunft ;
+		sh:class alkis:LI_Lineage ;
+	] .
+
+:AX_DQOhneDatenerhebung-herkunft
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQOhneDatenerhebung ;
+	sh:property [
+		sh:path alkis:herkunft ;
+		sh:class alkis:LI_Lineage ;
+	] .
+
+:AX_DQPunktort-genauigkeitsstufe
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQPunktort ;
+	sh:property [
+		sh:path alkis:genauigkeitsstufe ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_DQPunktort-genauigkeitswert	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQPunktort ;
+	sh:property [
+		sh:path alkis:genauigkeitswert ;
+		sh:class alkis:DQ_RelativeInternalPositionalAccuracy ;
+	] .
+
+:AX_DQPunktort-herkunft	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQPunktort ;
+	sh:property [
+		sh:path alkis:herkunft ;
+		sh:class alkis:LI_Lineage ;
+	] .
+
+:AX_DQPunktort-lagezuverlaessigkeit	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQPunktort ;
+	sh:property [
+		sh:path alkis:lagezuverlaessigkeit ;
+		sh:datatype xsd:boolean ;
+	] .
+
+:AX_DQPunktort-vertrauenswuerdigkeit	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_DQPunktort ;
+	sh:property [
+		sh:path alkis:vertrauenswuerdigkeit ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Dienststelle-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Dienststelle-hat		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle ;
+	sh:property [
+		sh:path alkis:hat ;
+		sh:class alkis:AX_Anschrift ;
+	] .
+
+:AX_Dienststelle-schluessel			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle ;
+	sh:property [
+		sh:path alkis:schluessel ;
+		dash:hasValueWithClass alkis:AX_Dienststelle_Schluessel ;
+		sh:minCount 1 ;
+	] .
+
+:AX_Dienststelle-schluesselGesamt			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle ;
+	sh:property [
+		sh:path alkis:schluesselGesamt ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Dienststelle-stellenart			
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle ;
+	sh:property [
+		sh:path alkis:stellenart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Dienststelle_Schluessel-stelle		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Dienststelle_Schluessel ;
+	sh:property [
+		sh:path alkis:stelle ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_FlaecheBesondererFunktionalerPraegung-artDerBebauung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_FlaecheBesondererFunktionalerPraegung ;
+	sh:property [
+		sh:path alkis:artDerBebauung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Flugverkehr-art
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flugverkehr ;
+	sh:property [
+		sh:path alkis:art ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Flugverkehr-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flugverkehr ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Flugverkehr-nutzung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flugverkehr ;
+	sh:property [
+		sh:path alkis:nutzung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Flurstueck-abweichenderRechtszustand
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:abweichenderRechtszustand ;
+		sh:datatype xsd:boolean ;
+	] .
+
+:AX_Flurstueck-amtlicheFlaeche	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:amtlicheFlaeche ;
+		sh:datatype xsd:double ;
+	] .
+
+:AX_Flurstueck-flurnummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:flurnummer ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Flurstueck-flurstuecksfolge	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:flurstuecksfolge ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Flurstueck-flurstueckskennzeichen	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:flurstueckskennzeichen ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Flurstueck-flurstuecksnummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:flurstuecksnummer ;
+		sh:class alkis:AX_Flurstuecksnummer ;
+	] .
+
+:AX_Flurstueck-gehoertAnteiligZu	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:gehoertAnteiligZu ;
+		sh:class alkis:AX_Flurstueck ;
+	] .
+
+:AX_Flurstueck-gemarkung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:gemarkung ;
+		dash:hasValueWithClass alkis:AX_Gemarkung_Schluessel ;
+		sh:minCount 1 ;
+	] .
+
+:AX_Flurstueck-gemeindezugehoerigkeit	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:gemeindezugehoerigkeit ;
+		sh:class alkis:AX_Gemeindekennzeichen ;
+	] .
+
+:AX_Flurstueck-istGebucht	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:istGebucht ;
+		sh:class alkis:AX_Buchungsstelle ;
+		sh:maxCount 1 ;
+		sh:minCount 1 ;
+	] .
+
+	
+:AX_Flurstueck-rechtsbehelfsverfahren	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:rechtsbehelfsverfahren ;
+		sh:datatype xsd:boolean ;
+	] .
+
+	
+:AX_Flurstueck-sonstigeEigenschaften	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:sonstigeEigenschaften ;
+		sh:class alkis:AX_SonstigeEigenschaften_Flurstueck ;
+	] .
+
+:AX_Flurstueck-weistAuf	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:weistAuf ;
+		sh:class alkis:AX_LagebezeichnungMitHausnummer ;
+	] .
+
+:AX_Flurstueck-zeigtAuf	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:zeigtAuf ;
+		sh:class alkis:AX_LagebezeichnungOhneHausnummer ;
+	] .
+
+:AX_Flurstueck-zeitpunktDerEntstehung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:zeitpunktDerEntstehung ;
+		sh:datatype xsd:date ;
+	] .
+
+:AX_Flurstueck-zustaendigeStelle	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstueck ;
+	sh:property [
+		sh:path alkis:zustaendigeStelle ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:AX_Flurstuecksnummer-nenner	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstuecksnummer ;
+	sh:property [
+		sh:path alkis:nenner ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Flurstuecksnummer-zaehler	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Flurstuecksnummer ;
+	sh:property [
+		sh:path alkis:zaehler ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Gebaeude-anzahlDerOberirdischenGeschosse
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:anzahlDerOberirdischenGeschosse ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Gebaeude-bauweise
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:bauweise ;
+		sh:datatype xsd:integer ;
+	] .
+	
+
+:AX_Gebaeude-gebaeudefunktion	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:gebaeudefunktion ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Gebaeude-gebaeudekennzeichen
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:gebaeudekennzeichen ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AX_Gebaeude-grundflaeche
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:grundflaeche ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AX_Gebaeude-objekthoehe
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:objekthoehe ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AX_Gebaeude-qualitaetsangaben
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+	
+:AX_Gebaeude-zeigtAuf
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeude ;
+	sh:property [
+		sh:path alkis:zeigtAuf ;
+		sh:class alkis:AX_LagebezeichnungMitHausnummer ;
+	] .
+	
+:AX_Gebaeudeausgestaltung-darstellung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeudeausgestaltung ;
+	sh:property [
+		sh:path alkis:darstellung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Gebaeudeausgestaltung-zeigtAuf	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gebaeudeausgestaltung ;
+	sh:property [
+		sh:path alkis:zeigtAuf ;
+		dash:hasValueWithClass alkis:AX_Gebaeude ;
+		sh:minCount 1 ;
+	] .
+
+:AX_Gehoelz-vegetationsmerkmal	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gehoelz ;
+	sh:property [
+		sh:path alkis:vegetationsmerkmal ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Gemarkung-gemarkung_schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemarkung ;
+	sh:property [
+		sh:path alkis:gemarkung_schluessel ;
+		sh:class alkis:AX_Gemarkung_Schluessel ;
+	] .
+
+:AX_Gemarkung-istAmtsbezirkVon		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemarkung ;
+	sh:property [
+		sh:path alkis:istAmtsbezirkVon ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:AX_Gemarkung_Schluessel-gemarkungsnummer		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemarkung_Schluessel ;
+	sh:property [
+		sh:path alkis:gemarkungsnummer ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_GemarkungsteilFlur-gemarkungsteilFlur_schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GemarkungsteilFlur ;
+	sh:property [
+		sh:path alkis:gemarkungsteilFlur_schluessel ;
+		sh:class alkis:AX_GemarkungsteilFlur_Schluessel ;
+	] .
+
+:AX_GemarkungsteilFlur_Schluessel-gemarkungsteilFlur
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GemarkungsteilFlur_Schluessel ;
+	sh:property [
+		sh:path alkis:gemarkungsteilFlur ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Gemeinde-gemeindekennzeichen
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemeinde ;
+	sh:property [
+		sh:path alkis:gemeindekennzeichen ;
+		sh:class alkis:AX_Gemeindekennzeichen ;
+	] .
+
+:AX_Gemeinde-istTeilVon	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemeinde ;
+	sh:property [
+		sh:path alkis:istTeilVon ;
+		sh:class alkis:AX_Verwaltungsgemeinschaft ;
+	] .
+
+:AX_Gemeindekennzeichen-gemeinde
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Gemeindekennzeichen ;
+	sh:property [
+		sh:path alkis:gemeinde ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-adressierungszusatz
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:adressierungszusatz ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-datensatznummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:datensatznummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-gemeindezugehoerigkeit	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:gemeindezugehoerigkeit ;
+		sh:class alkis:AX_Gemeindekennzeichen ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-hatAuch	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:hatAuch ;
+		sh:class alkis:AX_LagebezeichnungMitHausnummer ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-hausnummer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:hausnummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-ortsteil	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:ortsteil ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-postalischeAdresse	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:postalischeAdresse ;
+		sh:class alkis:AX_Post ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-qualitaetsangaben	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_GeoreferenzierteGebaeudeadresse-strassenschluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GeoreferenzierteGebaeudeadresse ;
+	sh:property [
+		sh:path alkis:strassenschluessel ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_GrablochDerBodenschaetzung-bedeutung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GrablochDerBodenschaetzung ;
+	sh:property [
+		sh:path alkis:bedeutung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_GrablochDerBodenschaetzung-inGemarkung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GrablochDerBodenschaetzung ;
+	sh:property [
+		sh:path alkis:inGemarkung ;
+		sh:class alkis:AX_Gemarkung_Schluessel ;
+	] .
+
+:AX_GrablochDerBodenschaetzung-kennziffer	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_GrablochDerBodenschaetzung ;
+	sh:property [
+		sh:path alkis:kennziffer ;
+		sh:class alkis:AX_KennzifferGrabloch ;
+	] .
+
+:AX_Grenzpunkt-abmarkung_Marke	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Grenzpunkt ;
+	sh:property [
+		sh:path alkis:abmarkung_Marke ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Grenzpunkt-bemerkungZurAbmarkung		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Grenzpunkt ;
+	sh:property [
+		sh:path alkis:bemerkungZurAbmarkung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Grenzpunkt-besonderePunktnummer		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Grenzpunkt ;
+	sh:property [
+		sh:path alkis:besonderePunktnummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Grenzpunkt-festgestellterGrenzpunkt		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Grenzpunkt ;
+	sh:property [
+		sh:path alkis:festgestellterGrenzpunkt ;
+		sh:datatype xsd:boolean ;
+	] .
+
+:AX_Grenzpunkt-relativeHoehe		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Grenzpunkt ;
+	sh:property [
+		sh:path alkis:relativeHoehe ;
+		sh:datatype xsd:double ;
+	] .
+
+ alkis:AX_Hafenbecken-nutzung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Hafenbecken  ;
+	sh:property [
+		sh:path alkis:nutzung ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Halde-lagergut
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Halde ;
+	sh:property [
+		sh:path alkis:lagergut ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_HistorischesFlurstueckALB-buchung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:buchung ;
+		dash:hasValueWithClass alkis:AX_Buchung_HistorischesFlurstueck ;
+		sh:minCount 1 
+	] .
+
+:AX_HistorischesFlurstueckALB-fortfuehrungsart	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:fortfuehrungsart ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_HistorischesFlurstueckALB-laufendeNummerDerFortfuehrung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:laufendeNummerDerFortfuehrung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_HistorischesFlurstueckALB-nachfolgerFlurstueckskennzeichen	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:nachfolgerFlurstueckskennzeichen ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_HistorischesFlurstueckALB-vorgaengerFlurstueckskennzeichen	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:vorgaengerFlurstueckskennzeichen ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_HistorischesFlurstueckALB-zeitpunktDerEntstehungDesBezugsflurstuecks	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_HistorischesFlurstueckALB ;
+	sh:property [
+		sh:path alkis:zeitpunktDerEntstehungDesBezugsflurstuecks ;
+		sh:datatype xsd:date ;
+	] .
+
+:AX_IndustrieUndGewerbeflaeche-foerdergut	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_IndustrieUndGewerbeflaeche ;
+	sh:property [
+		sh:path alkis:foerdergut ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_IndustrieUndGewerbeflaeche-lagergut		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_IndustrieUndGewerbeflaeche ;
+	sh:property [
+		sh:path alkis:lagergut ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_IndustrieUndGewerbeflaeche-primaerenergie		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_IndustrieUndGewerbeflaeche ;
+	sh:property [
+		sh:path alkis:primaerenergie ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_KennzifferGrabloch-nummerDesGrablochs	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KennzifferGrabloch ;
+	sh:property [
+		sh:path alkis:nummerDesGrablochs ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_KennzifferGrabloch-nummerierungsbezirk		  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KennzifferGrabloch ;
+	sh:property [
+		sh:path alkis:nummerierungsbezirk ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_KennzifferGrabloch-schluessel		  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KennzifferGrabloch ;
+	sh:property [
+		sh:path alkis:schluessel ;
+		sh:class alkis:AX_Gemarkung_Schluessel ;
+	] .
+
+ alkis:AX_KommunalesGebiet-gemeindeflaeche
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KommunalesGebiet ;
+	sh:property [
+		sh:path alkis:gemeindeflaeche ;
+		sh:datatype xsd:double ;
+	] .
+	
+ 
+:AX_KommunalesGebiet-gemeindekennzeichen	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KommunalesGebiet ;
+	sh:property [
+		sh:path alkis:gemeindekennzeichen ;
+		dash:hasValueWithClass alkis:AX_Gemeindekennzeichen ;
+		sh:minCount 1 ;
+	] .
+	
+:AX_KreisRegion-istAmtsbezirkVon
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KreisRegion ;
+	sh:property [
+		sh:path alkis:istAmtsbezirkVon ;
+	sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:AX_KreisRegion-kreis_schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_KreisRegion ;
+	sh:property [
+		sh:path alkis:kreis_schluessel ;
+		sh:class alkis:AX_Kreis_Schluessel ;
+	] .
+
+ alkis:AX_Kreis_Schluessel-kreis
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Kreis_Schluessel ;
+	sh:property [
+		sh:path alkis:kreis ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Lagebezeichnung-unverschluesselt
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Lagebezeichnung ;
+	sh:property [
+		sh:path alkis:unverschluesselt ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Lagebezeichnung-verschluesselt	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Lagebezeichnung ;
+	sh:property [
+		sh:path alkis:verschluesselt ;
+		sh:class alkis:AX_VerschluesselteLagebezeichnung ;
+	] .
+
+:AX_LagebezeichnungKatalogeintrag-bezeichnung 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungKatalogeintrag ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_LagebezeichnungKatalogeintrag-kennung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungKatalogeintrag ;
+	sh:property [
+		sh:path alkis:kennung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_LagebezeichnungKatalogeintrag-schluessel
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungKatalogeintrag ;
+	sh:property [
+		sh:path alkis:schluessel ;
+		dash:hasValueWithClass alkis:AX_VerschluesselteLagebezeichnung ;
+		sh:minCount 1 ;
+	] .
+
+:AX_LagebezeichnungKatalogeintrag-schluesselGesamt	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungKatalogeintrag ;
+	sh:property [
+		sh:path alkis:schluesselGesamt ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_LagebezeichnungMitHausnummer-hausnummer
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungMitHausnummer ;
+	sh:property [
+		sh:path alkis:hausnummer ;
+		sh:datatype xsd:string ;
+	] .
+
+	
+:AX_LagebezeichnungOhneHausnummer-lagebezeichnung	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_LagebezeichnungOhneHausnummer ;
+	sh:property [
+		sh:path alkis:lagebezeichnung ;
+		sh:class alkis:AX_Lagebezeichnung ;
+	] .
+
+ 
+:AX_Landwirtschaft-vegetationsmerkmal	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Landwirtschaft ;
+	sh:property [
+		sh:path alkis:vegetationsmerkmal ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Leitung-spannungsebene	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Leitung ;
+	sh:property [
+		sh:path alkis:spannungsebene ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-ackerzahlOderGruenlandzahl 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:ackerzahlOderGruenlandzahl ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-bodenart	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:bodenart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-bodenzahlOderGruenlandgrundzahl	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:bodenzahlOderGruenlandgrundzahl ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-entstehungsartOderKlimastufeWasserverhaeltnisse	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:entstehungsartOderKlimastufeWasserverhaeltnisse ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-kulturart	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:kulturart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-merkmal	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:merkmal ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-nummer	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:nummer ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-qualitaetsangaben	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-sonstigeAngaben	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:sonstigeAngaben ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_MusterLandesmusterUndVergleichsstueck-zustandsstufeOderBodenstufe	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_MusterLandesmusterUndVergleichsstueck ;
+	sh:property [
+		sh:path alkis:zustandsstufeOderBodenstufe ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Namensnummer-anteil	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:anteil ;
+		sh:class alkis:AX_Anteil ;
+	] .
+
+:AX_Namensnummer-artDerRechtsgemeinschaft		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:artDerRechtsgemeinschaft ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Namensnummer-benennt		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:benennt ;
+		sh:class alkis:AX_Person ;
+	] .
+
+:AX_Namensnummer-beschriebDerRechtsgemeinschaft		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:beschriebDerRechtsgemeinschaft ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Namensnummer-bestehtAusRechtsverhaeltnissenZu		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:bestehtAusRechtsverhaeltnissenZu ;
+		sh:class alkis:AX_Namensnummer ;
+	] .
+
+:AX_Namensnummer-eigentuemerart		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:eigentuemerart ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Namensnummer-istBestandteilVon		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:istBestandteilVon ;
+		sh:class alkis:AX_Buchungsblatt ;
+	] .
+
+:AX_Namensnummer-laufendeNummerNachDIN1421		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Namensnummer ;
+	sh:property [
+		sh:path alkis:laufendeNummerNachDIN1421 ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Person-akademischerGrad   
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:akademischerGrad ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Person-anrede	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:anrede ;
+		sh:datatype xsd:string ;
+	] .
+
+	  
+:AX_Person-geburtsdatum	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:geburtsdatum ;
+		sh:datatype xsd:date ;
+	] .
+
+:AX_Person-geburtsname	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:geburtsname ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Person-hat	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:hat ;
+		sh:class alkis:AX_Anschrift ;
+	] .
+
+:AX_Person-nachnameOderFirma	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:nachnameOderFirma ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Person-namensbestandteil	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:namensbestandteil ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Person-qualitaetsangaben	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQOhneDatenerhebung ;
+	] .
+
+:AX_Person-vorname	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Person ;
+	sh:property [
+		sh:path alkis:vorname ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Platz-zweitname	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Platz ;
+	sh:property [
+		sh:path alkis:zweitname ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Post-ortsnamePost	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Post ;
+	sh:property [
+		sh:path alkis:ortsnamePost ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Post-postleitzahl		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Post ;
+	sh:property [
+		sh:path alkis:postleitzahl ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Post-strassenname		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Post ;
+	sh:property [
+		sh:path alkis:strassenname ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Punktort-hinweise 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Punktort ;
+	sh:property [
+		sh:path alkis:hinweise ;
+	sh:datatype xsd:integer ;
+	] .
+	
+ alkis:AX_Punktort-istTeilVon
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Punktort ;
+	sh:property [
+		sh:path alkis:istTeilVon ;
+		dash:hasValueWithClass alkis:Punktart ;
+		sh:minCount 1 ;
+	] .
+	
+ alkis:AX_Punktort-kartendarstellung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Punktort ;
+	sh:property [
+		sh:path alkis:kartendarstellung ;
+		sh:datatype xsd:boolean ;
+	] .
+	
+ alkis:AX_Punktort-koordinatenstatus
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Punktort ;
+	sh:property [
+		sh:path alkis:koordinatenstatus ;
+		sh:datatype xsd:integer ;
+	] .
+	
+ alkis:AX_Punktort-qualitaetsangaben
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Punktort ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQPunktort ;
+	] .
+	
+:AX_Regierungsbezirk-regierungsbezirk_schluessel
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Regierungsbezirk ;
+	sh:property [
+		sh:path alkis:regierungsbezirk_schluessel ;
+		sh:class alkis:AX_Regierungsbezirk_Schluessel ;
+	] .
+
+
+:AX_Regierungsbezirk_Schluessel-regierungsbezirk
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Regierungsbezirk_Schluessel	 ;
+	sh:property [
+		sh:path alkis:regierungsbezirk ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_SchutzgebietNachWasserrecht-funktion 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SchutzgebietNachWasserrecht ;
+	sh:property [
+		sh:path alkis:funktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_SchutzgebietNachWasserrecht-nummerDesSchutzgebietes	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SchutzgebietNachWasserrecht ;
+	sh:property [
+		sh:path alkis:nummerDesSchutzgebietes ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Schutzzone-istTeilVon  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Schutzzone ;
+	sh:property [
+		sh:path alkis:istTeilVon ;
+		dash:hasValueWithClass alkis:AX_SchutzgebietNachWasserrecht ;
+		sh:minCount 1 ;
+	] .
+
+:AX_Schutzzone-zone	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Schutzzone ;
+	sh:property [
+		sh:path alkis:zone ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_SonstigeEigenschaften_Flurstueck-angabenZumAbschnittBemerkung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigeEigenschaften_Flurstueck ;
+	sh:property [
+		sh:path alkis:angabenZumAbschnittBemerkung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_SonstigeEigenschaften_Flurstueck-angabenZumAbschnittFlurstueck		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigeEigenschaften_Flurstueck ;
+	sh:property [
+		sh:path alkis:angabenZumAbschnittFlurstueck ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_SonstigeEigenschaften_Flurstueck-angabenZumAbschnittNummerAktenzeichen		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigeEigenschaften_Flurstueck ;
+	sh:property [
+		sh:path alkis:angabenZumAbschnittNummerAktenzeichen ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_SonstigeEigenschaften_Flurstueck-kennungSchluessel		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigeEigenschaften_Flurstueck ;
+	sh:property [
+		sh:path alkis:kennungSchluessel ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_SonstigerVermessungspunkt-art
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigerVermessungspunkt ;
+	sh:property [
+		sh:path alkis:art ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_SonstigesBauwerkOderSonstigeEinrichtung-gehoertZuBauwerk	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigesBauwerkOderSonstigeEinrichtung ;
+	sh:property [
+		sh:path alkis:gehoertZuBauwerk ;
+		sh:class alkis:AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
+	] .
+
+:AX_SonstigesBauwerkOderSonstigeEinrichtung-qualitaetsangaben		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SonstigesBauwerkOderSonstigeEinrichtung ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+
+:AX_SportFreizeitUndErholungsflaeche-funktion	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_SportFreizeitUndErholungsflaeche ;
+	sh:property [
+		sh:path alkis:funktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Strassenverkehr-funktion	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Strassenverkehr ;
+	sh:property [
+		sh:path alkis:funktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_TagebauGrubeSteinbruch-abbaugut
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TagebauGrubeSteinbruch ;
+	sh:property [
+		sh:path alkis:abbaugut ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_TatsaechlicheNutzung-datumDerLetztenUeberpruefung 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:datumDerLetztenUeberpruefung ;
+		sh:datatype xsd:dateTime ;
+	] .
+
+:AX_TatsaechlicheNutzung-funktion	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:funktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_TatsaechlicheNutzung-hatEinschraenkung	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:hatEinschraenkung ;
+		sh:class alkis:Nutzungsbeschraenkungen ;
+	] .
+
+:AX_TatsaechlicheNutzung-name	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:name ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_TatsaechlicheNutzung-qualitaetsangaben	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+
+:AX_TatsaechlicheNutzung-zustand	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_TatsaechlicheNutzung ;
+	sh:property [
+		sh:path alkis:zustand ;
+		sh:datatype xsd:integer ;
+	] .
+
+ alkis:AX_Transportanlage-lageZurErdoberflaeche
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Transportanlage ;
+	sh:property [
+		sh:path alkis:lageZurErdoberflaeche ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Transportanlage-produkt	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Transportanlage ;
+	sh:property [
+		sh:path alkis:produkt ;
+		sh:datatype xsd:integer ;
+	] .
+	
+:AX_Turm-objekthoehe
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Turm ;
+	sh:property [
+		sh:path alkis:objekthoehe ;
+		sh:datatype xsd:double ;
+	] .
+	
+:AX_Turm-zeigtAuf
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Turm ;
+	sh:property [
+		sh:path alkis:zeigtAuf ;
+		sh:class alkis:AX_LagebezeichnungMitHausnummer ;
+	] .
+	
+:AX_UnlandVegetationsloseFlaeche-oberflaechenmaterial
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_UnlandVegetationsloseFlaeche ;
+	sh:property [
+		sh:path alkis:oberflaechenmaterial ;
+		sh:datatype xsd:integer ;
+	] .
+
+ 
+:AX_VerschluesselteLagebezeichnung-lage	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_VerschluesselteLagebezeichnung ;
+	sh:property [
+		sh:path alkis:lage ;
+		sh:datatype xsd:integer ;
+	] .
+
+
+:AX_Verwaltungsgemeinschaft-bezeichnungArt	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Verwaltungsgemeinschaft ;
+	sh:property [
+		sh:path alkis:bezeichnungArt ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Verwaltungsgemeinschaft-verwaltungsgemeinschaft_schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Verwaltungsgemeinschaft ;
+	sh:property [
+		sh:path alkis:verwaltungsgemeinschaft_schluessel ;
+		sh:class alkis:AX_Verwaltungsgemeinschaft_Schluessel ;
+	] .
+
+:AX_Verwaltungsgemeinschaft_Schluessel-verwaltungsgemeinschaft
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Verwaltungsgemeinschaft_Schluessel ;
+	sh:property [
+		sh:path alkis:verwaltungsgemeinschaft ;
+		sh:datatype xsd:integer ;
+	] .
+
+ alkis:AX_VorratsbehaelterSpeicherbauwerk-lageZurErdoberflaeche
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_VorratsbehaelterSpeicherbauwerk ;
+	sh:property [
+		sh:path alkis:lageZurErdoberflaeche ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_VorratsbehaelterSpeicherbauwerk-objekthoehe	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_VorratsbehaelterSpeicherbauwerk ;
+	sh:property [
+		sh:path alkis:objekthoehe ;
+		sh:datatype xsd:double ;
+	] .
+
+:AX_VorratsbehaelterSpeicherbauwerk-speicherinhalt	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_VorratsbehaelterSpeicherbauwerk ;
+	sh:property [
+		sh:path alkis:speicherinhalt ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AX_Wald-bezeichnung	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Wald ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:AX_Wald-vegetationsmerkmal		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Wald ;
+	sh:property [
+		sh:path alkis:vegetationsmerkmal ;
+		sh:datatype xsd:integer ;
+	] .
+	
+ alkis:AX_Wohnplatz-zweitname
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AX_Wohnplatz ;
+	sh:property [
+		sh:path alkis:zweitname ;
+		sh:datatype xsd:string ;
+	] .
+
+ alkis:AdministrativeEinheit-administrativeFunktion 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AdministrativeEinheit ;
+	sh:property [
+		sh:path alkis:administrativeFunktion ;
+		sh:datatype xsd:integer ;
+	] .
+
+:AdministrativeEinheit-bezeichnung  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AdministrativeEinheit ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+	
+:AdministrativeEinheit-schluessel  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AdministrativeEinheit ;
+	sh:property [
+		sh:path alkis:schluessel ;
+		sh:class alkis:Schluessel ;
+	] .
+
+:AdministrativeEinheit-schluesselGesamt	  
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:AdministrativeEinheit ;
+	sh:property [
+		sh:path alkis:schluesselGesamt ;
+		:datatype xsd:string ;
+	] .
+
+ alkis:CI_ResponsibleParty-organisationName
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:CI_ResponsibleParty ;
+	sh:property [
+		sh:path alkis:organisationName ;
+		sh:datatype xsd:string ;
+	] .
+
+:CI_ResponsibleParty-role	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:CI_ResponsibleParty ;
+	sh:property [
+		sh:path alkis:role ;
+		sh:datatype xsd:string ;
+	] .
+
+:DQ_QuantitativeResult-value	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:DQ_QuantitativeResult ;
+	sh:property [
+		sh:path alkis:value ;
+		sh:datatype xsd:double ;
+	] .
+
+:DQ_QuantitativeResult-valueUnit		
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:DQ_QuantitativeResult ;
+	sh:property [
+		sh:path alkis:valueUnit ;
+		sh:datatype xsd:string ;
+	] .
+
+:DQ_RelativeInternalPositionalAccuracy-result	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:DQ_RelativeInternalPositionalAccuracy ;
+	sh:property [
+		sh:path alkis:result ;
+		sh:class alkis:DQ_QuantitativeResult ;
+	] .
+
+:LI_Lineage-processStep	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_Lineage ;
+	sh:property [
+		sh:path alkis:processStep ;
+		sh:class alkis:LI_ProcessStep ;
+	] .
+
+  alkis:LI_Lineage-source
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_Lineage-source ;
+	sh:property [
+		sh:path alkis:source ;
+		sh:class alkis:LI_Source ;
+	] .
+
+:LI_ProcessStep-dateTime	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_ProcessStep ;
+	sh:property [
+		sh:path alkis:dateTime ;
+		sh:datatype xsd:dateTime ;
+	] .
+	
+:LI_ProcessStep-description	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_ProcessStep ;
+	sh:property [
+		sh:path alkis:description ;
+		sh:datatype xsd:string ;
+	] .
+	
+:LI_ProcessStep-processor	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_ProcessStep ;
+	sh:property [
+		sh:path alkis:processor ;
+		sh:class alkis:CI_ResponsibleParty ;
+	] .
+	
+:LI_ProcessStep-source	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_ProcessStep ;
+	sh:property [
+		sh:path alkis:source ;
+		sh:class alkis:LI_Source ;
+	] .
+	
+:LI_Source-description
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:LI_Source ;
+	sh:property [
+		sh:path alkis:description ;
+		sh:datatype xsd:string ;
+	] .
+
+ alkis:Nutzungsbeschraenkungen-artDerFestlegung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Nutzungsbeschraenkungen ;
+	sh:property [
+		sh:path alkis:artDerFestlegung ;
+		sh:datatype xsd:integer ;
+	] .
+
+:Nutzungsbeschraenkungen-ausfuehrendeStelle	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Nutzungsbeschraenkungen ;
+	sh:property [
+		sh:path alkis:ausfuehrendeStelle ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+	 
+:Nutzungsbeschraenkungen-bezeichnung	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Nutzungsbeschraenkungen ;
+	sh:property [
+		sh:path alkis:bezeichnung ;
+		sh:datatype xsd:string ;
+	] .
+
+:Nutzungsbeschraenkungen-name	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Nutzungsbeschraenkungen ;
+	sh:property [
+		sh:path alkis:name ;
+		sh:datatype xsd:string ;
+	] .
+
+:Nutzungsbeschraenkungen-qualitaetsangaben	 
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Nutzungsbeschraenkungen ;
+	sh:property [
+		sh:path alkis:qualitaetsangaben ;
+		sh:class alkis:AX_DQMitDatenerhebung ;
+	] .
+	
+:Punktart-punktkennung
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Punktart ;
+	sh:property [
+		sh:path alkis:punktkennung ;
+		sh:datatype xsd:string ;
+	] .
+	
+:Punktart-sonstigeEigenschaft
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Punktart ;
+	sh:property [
+		sh:path alkis:sonstigeEigenschaft ;
+		sh:datatype xsd:string ;
+	] .
+	
+:Punktart-vermarkung_Marke	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Punktart ;
+	sh:property [
+		sh:path alkis:vermarkung_Marke ;
+		sh:datatype xsd:integer ;
+	] .
+
+:Punktart-zustaendigeStelle
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Punktart ;
+	sh:property [
+		sh:path alkis:zustaendigeStelle ;
+		sh:class alkis:AX_Dienststelle_Schluessel ;
+	] .
+
+:Schluessel-schluessel	
+	rdf:type sh:NodeShape ;
+	sh:targetClass alkis:Schluessel ;
+	sh:property [
+		sh:path alkis:schluessel ;
+	] .
+
+<http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/shacl/alkis_shapes.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <http://datashapes.org/dash> ;
+  owl:imports <http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl> ;
+.
+
+calathe:Construction-hatEinschraenkung
+	rdf:type sh:NodeShape ;
+	sh:targetClass calathe:Construction ;
+	sh:property [
+		sh:path alkis:hatEinschraenkung ;
+		sh:class alkis:Nutzungsbeschraenkungen ;
+	] .
