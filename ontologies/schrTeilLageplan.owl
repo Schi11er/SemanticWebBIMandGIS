@@ -1,0 +1,519 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#"
+     xml:base="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:alkis="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl">
+        <owl:imports rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksnummer -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksnummer">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#flurstuecksnummer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#benennt -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#benennt">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundbuch"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#enthaelt -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#enthaelt">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#schrTeilLP"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#flurstuecksnummer -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#flurstuecksnummer">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gehoert -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gehoert">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grenztAn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grenztAn">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hat -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hat">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hatEintragIm -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hatEintragIm">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#liegtIn -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#liegtIn">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemeindeName"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattkennzeichen -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattkennzeichen">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grundbuch"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hausnummer -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hausnummer">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hausnummer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachnameOderFirma -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachnameOderFirma">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#name"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ort_Post -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ort_Post">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#ort"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahlPostzustellung -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahlPostzustellung">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#plz"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluesselGesamt -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluesselGesamt">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemarkung"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strasse -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strasse">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#strasse"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorname -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorname">
+        <owl:equivalentProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#vorname"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#FlaecheGeplant -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#FlaecheGeplant">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundflaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#FlaecheVorhanden -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#FlaecheVorhanden">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundflaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#anlageBeigefuegt -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#anlageBeigefuegt">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Lasten_Beschraenkungen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#anrede -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#anrede">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#art -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#art">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#schrTeilLP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#datum -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#datum">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#schrTeilLP"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemarkung -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemarkung">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemeindeName -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gemeindeName">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#geplant -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#geplant">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grundbuch -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grundbuch">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundbuch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hausnummer -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hausnummer">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#name">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#ort -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#ort">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#ortsteil -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#ortsteil">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#plz -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#plz">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#strasse -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#strasse">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#vorhanden -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#vorhanden">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung"/>
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Lasten_Beschraenkungen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#vorname -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#vorname">
+        <rdfs:domain rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer"/>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeinde -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeinde">
+        <owl:equivalentClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hat"/>
+                <owl:someValuesFrom rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundflaeche"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde"/>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundbuch -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundbuch">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#benennt"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#benennt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundflaeche -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundflaeche"/>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#grenztAn"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hat"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#BaulicheNutzung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hat"/>
+                <owl:allValuesFrom rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Lasten_Beschraenkungen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#flurstuecksnummer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#hatEintragIm"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundbuch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#liegtIn"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Gemeinde"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Lasten_Beschraenkungen -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Lasten_Beschraenkungen"/>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Nachbargrundstueck">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#gehoert"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Eigentuemer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#flurstuecksnummer"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#schrTeilLP -->
+
+    <owl:Class rdf:about="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#schrTeilLP">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#enthaelt"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="https://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/stlp.owl#Grundstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

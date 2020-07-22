@@ -23,16 +23,58 @@
 #    Object Properties
 #################################################################
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#an
+:an rdf:type owl:ObjectProperty ;
+    rdfs:domain :AX_Buchungsstelle .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anteil
+:anteil rdf:type owl:ObjectProperty ;
+        rdfs:domain :AX_Namensnummer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ausfuehrendeStelle
+:ausfuehrendeStelle rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Nutzungsbeschraenkungen .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#benennt
 :benennt rdf:type owl:ObjectProperty ;
          rdfs:domain :AX_Namensnummer ;
          rdfs:range :AX_Person .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestehtAusRechtsverhaeltnissenZu
+:bestehtAusRechtsverhaeltnissenZu rdf:type owl:ObjectProperty ;
+                                  rdfs:domain :AX_Namensnummer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung
+:bezeichnung rdf:type owl:ObjectProperty ;
+             rdfs:domain :AX_Bahnverkehr ,
+                         :AX_BauwerkeEinrichtungenUndSonstigeAngaben ,
+                         :AX_Bergbaubetrieb ,
+                         :AX_Dienststelle ,
+                         :AX_Flugverkehr ,
+                         :AX_LagebezeichnungKatalogeintrag ,
+                         :AX_Wald ,
+                         :AdministrativeEinheit ,
+                         :Nutzungsbeschraenkungen .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beziehtSichAuchAuf
+:beziehtSichAuchAuf rdf:type owl:ObjectProperty ;
+                    rdfs:domain :AX_Buchungsstelle .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchung
+:buchung rdf:type owl:ObjectProperty ;
+         rdfs:domain :AX_HistorischesFlurstueckALB .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk
 :buchungsblattbezirk rdf:type owl:ObjectProperty ;
-                     rdfs:domain :AX_Buchungsblatt ;
-                     rdfs:range :AX_Buchungsblattbezirk .
+                     rdfs:domain :AX_Buchungsblatt .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk_schluessel
@@ -63,22 +105,36 @@
                                     :AP_GPO .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durch
+:durch rdf:type owl:ObjectProperty ;
+       rdfs:domain :AX_Buchungsstelle .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksnummer
 :flurstuecksnummer rdf:type owl:ObjectProperty ;
                    rdfs:domain :AX_Flurstueck ;
                    rdfs:range :AX_Flurstuecksnummer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertAnteiligZu
+:gehoertAnteiligZu rdf:type owl:ObjectProperty ;
+                   rdfs:domain :AX_Flurstueck .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZu
 :gehoertZu rdf:type owl:ObjectProperty ;
-           rdfs:domain :AX_Buchungsblattbezirk ;
-           rdfs:range :AX_Dienststelle .
+           rdfs:domain :AX_Buchungsblattbezirk .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZuBauwerk
+:gehoertZuBauwerk rdf:type owl:ObjectProperty ;
+                  rdfs:domain :AX_SonstigesBauwerkOderSonstigeEinrichtung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung
 :gemarkung rdf:type owl:ObjectProperty ;
-           rdfs:domain :AX_Flurstueck ;
-           rdfs:range :AX_Gemarkung .
+           rdfs:domain :AX_Flurstueck ,
+                       :AX_GemarkungsteilFlur_Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung_schluessel
@@ -97,20 +153,25 @@
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindekennzeichen
 :gemeindekennzeichen rdf:type owl:ObjectProperty ;
-                     rdfs:subPropertyOf :schluessel ;
+                     owl:equivalentProperty :schluessel ;
                      rdfs:domain :AX_Gemeinde .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindezugehoerigkeit
 :gemeindezugehoerigkeit rdf:type owl:ObjectProperty ;
                         rdfs:domain :AX_Flurstueck ,
-                                    :AX_GeoreferenzierteGebaeudeadresse ;
-                        rdfs:range :AX_Gemeinde .
+                                    :AX_GeoreferenzierteGebaeudeadresse .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#genauigkeitswert
+:genauigkeitswert rdf:type owl:ObjectProperty ;
+                  rdfs:domain :AX_DQPunktort .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hat
 :hat rdf:type owl:ObjectProperty ;
-     rdfs:domain :AX_Dienststelle ,
+     rdfs:domain :AX_Aufnahmepunkt ,
+                 :AX_Dienststelle ,
                  :AX_Person ;
      rdfs:range :AX_Anschrift .
 
@@ -157,6 +218,7 @@
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#istGebucht
 :istGebucht rdf:type owl:ObjectProperty ;
+            owl:inverseOf :verweistAuf ;
             rdfs:domain :AX_Flurstueck ;
             rdfs:range :AX_Buchungsstelle .
 
@@ -205,6 +267,11 @@
            rdfs:range :AA_Modellart .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postalischeAdresse
+:postalischeAdresse rdf:type owl:ObjectProperty ;
+                    rdfs:domain :AX_GeoreferenzierteGebaeudeadresse .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#processStep
 :processStep rdf:type owl:ObjectProperty ;
              rdfs:domain :LI_Lineage ;
@@ -232,6 +299,11 @@
                              rdfs:subPropertyOf :schluessel ;
                              rdfs:domain :AX_Kreis_Schluessel ,
                                          :AX_Regierungsbezirk .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#result
+:result rdf:type owl:ObjectProperty ;
+        rdfs:domain :DQ_RelativeInternalPositionalAccuracy .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel
@@ -266,6 +338,11 @@
                                     rdfs:domain :AX_Verwaltungsgemeinschaft .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verweistAuf
+:verweistAuf rdf:type owl:ObjectProperty ;
+             rdfs:domain :AX_Buchungsstelle .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weistAuf
 :weistAuf rdf:type owl:ObjectProperty ;
           rdfs:domain :AX_Flurstueck ;
@@ -275,7 +352,13 @@
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf
 :zeigtAuf rdf:type owl:ObjectProperty ;
           rdfs:domain :AX_Flurstueck ,
-                      :AX_Gebaeude .
+                      :AX_Gebaeude ,
+                      :AX_Gebaeudeausgestaltung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zu
+:zu rdf:type owl:ObjectProperty ;
+    rdfs:domain :AX_Buchungsstelle .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustaendigeStelle
@@ -286,29 +369,7 @@
 
 
 ###  http://www.opengis.net/ont/geosparql#hasGeometry
-geo:hasGeometry rdfs:domain :AP_LPO ,
-                            :AP_PPO ,
-                            :AP_PTO ,
-                            :AX_BauRaumOderBodenordnungsrecht ,
-                            :AX_BesondereFlurstuecksgrenze ,
-                            :AX_Bodenschaetzung ,
-                            :AX_Denkmalschutzrecht ,
-                            :AX_FlaecheGemischterNutzung ,
-                            :AX_Flurstueck ,
-                            :AX_Gebaeude ,
-                            :AX_GeoreferenzierteGebaeudeadresse ,
-                            :AX_GrablochDerBodenschaetzung ,
-                            :AX_KlassifizierungNachStrassenrecht ,
-                            :AX_Landwirtschaft ,
-                            :AX_PunktortAG ,
-                            :AX_PunktortAU ,
-                            :AX_PunktortTA ,
-                            :AX_SonstigesBauwerkOderSonstigeEinrichtung ,
-                            :AX_SportFreizeitUndErholungsflaeche ,
-                            :AX_StehendesGewaesser ,
-                            :AX_Strassenverkehr ,
-                            :AX_Weg ,
-                            :AX_Wohnbauflaeche .
+geo:hasGeometry rdfs:domain :ALKIS_Klasse .
 
 
 #################################################################
@@ -319,15 +380,29 @@ geo:hasGeometry rdfs:domain :AP_LPO ,
 ngeo:asWKT rdfs:range geo:wktLiteral .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abbaugut
+:abbaugut rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AX_Bergbaubetrieb ,
+                      :AX_TagebauGrubeSteinbruch ;
+          rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abmarkung_Marke
 :abmarkung_Marke rdf:type owl:DatatypeProperty ;
                  rdfs:domain :AX_Grenzpunkt ;
                  rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abweichenderRechtszustand
+:abweichenderRechtszustand rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :AX_Flurstueck ;
+                           rdfs:range xsd:boolean .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ackerzahlOderGruenlandzahl
 :ackerzahlOderGruenlandzahl rdf:type owl:DatatypeProperty ;
-                            rdfs:domain :AX_Bodenschaetzung ;
+                            rdfs:domain :AX_Bodenschaetzung ,
+                                        :AX_MusterLandesmusterUndVergleichsstueck ;
                             rdfs:range xsd:integer .
 
 
@@ -337,10 +412,22 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                         rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#adressierungszusatz
+:adressierungszusatz rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :AX_GeoreferenzierteGebaeudeadresse ;
+                     rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#advStandardModell
 :advStandardModell rdf:type owl:DatatypeProperty ;
                    rdfs:domain :AA_Modellart ;
                    rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#akademischerGrad
+:akademischerGrad rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :AX_Person ;
+                  rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#amtlicheFlaeche
@@ -355,6 +442,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                               rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittFlurstueck
+:angabenZumAbschnittFlurstueck rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :AX_SonstigeEigenschaften_Flurstueck ;
+                               rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittNummerAktenzeichen
 :angabenZumAbschnittNummerAktenzeichen rdf:type owl:DatatypeProperty ;
                                        rdfs:domain :AX_SonstigeEigenschaften_Flurstueck ;
@@ -364,7 +457,13 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anlass
 :anlass rdf:type owl:DatatypeProperty ;
         rdfs:domain :ALKIS_Klasse ;
-        rdfs:range xsd:integer .
+        rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anrede
+:anrede rdf:type owl:DatatypeProperty ;
+        rdfs:domain :AX_Person ;
+        rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anzahlDerOberirdischenGeschosse
@@ -377,8 +476,15 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :art rdf:type owl:DatatypeProperty ;
      rdfs:domain :AP_Darstellung ,
                  :AP_GPO ,
+                 :AX_Flugverkehr ,
                  :AX_SonstigerVermessungspunkt ;
      rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerBebauung
+:artDerBebauung rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_FlaecheBesondererFunktionalerPraegung ;
+                rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerFestlegung
@@ -393,9 +499,39 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                          rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerRechtsgemeinschaft
+:artDerRechtsgemeinschaft rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :AX_Namensnummer ;
+                          rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bahnkategorie
+:bahnkategorie rdf:type owl:DatatypeProperty ;
+               rdfs:domain :AX_Bahnverkehr ;
+               rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauart
+:bauart rdf:type owl:DatatypeProperty ;
+        rdfs:domain :AX_Bauteil ;
+        rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#baujahr
+:baujahr rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_Bauteil ;
+         rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauweise
+:bauweise rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AX_Gebaeude ;
+          rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauwerksfunktion
 :bauwerksfunktion rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :AX_SonstigesBauwerkOderSonstigeEinrichtung ;
+                  rdfs:domain :AX_BauwerkeEinrichtungenUndSonstigeAngaben ;
                   rdfs:range xsd:integer .
 
 
@@ -411,6 +547,36 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
          rdfs:range xsd:dateTime .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bemerkungZurAbmarkung
+:bemerkungZurAbmarkung rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :AX_Grenzpunkt ;
+                       rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschaffenheit
+:beschaffenheit rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_BesondereGebaeudelinie ;
+                rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschreibungDesSondereigentums
+:beschreibungDesSondereigentums rdf:type owl:DatatypeProperty ;
+                                rdfs:domain :AX_Buchungsstelle ;
+                                rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschriebDerRechtsgemeinschaft
+:beschriebDerRechtsgemeinschaft rdf:type owl:DatatypeProperty ;
+                                rdfs:domain :AX_Namensnummer ;
+                                rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#besonderePunktnummer
+:besonderePunktnummer rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :AX_Grenzpunkt ;
+                      rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestimmungsland
 :bestimmungsland rdf:type owl:DatatypeProperty ;
                  rdfs:domain :AX_Anschrift ;
@@ -419,9 +585,6 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung
 :bezeichnung rdf:type owl:DatatypeProperty ;
-             rdfs:domain :AX_Dienststelle ,
-                         :AX_LagebezeichnungKatalogeintrag ,
-                         :AdministrativeEinheit ;
              rdfs:range xsd:string .
 
 
@@ -445,13 +608,15 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bodenart
 :bodenart rdf:type owl:DatatypeProperty ;
-          rdfs:domain :AX_Bodenschaetzung ;
+          rdfs:domain :AX_Bodenschaetzung ,
+                      :AX_MusterLandesmusterUndVergleichsstueck ;
           rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bodenzahlOderGruenlandgrundzahl
 :bodenzahlOderGruenlandgrundzahl rdf:type owl:DatatypeProperty ;
-                                 rdfs:domain :AX_Bodenschaetzung ;
+                                 rdfs:domain :AX_Bodenschaetzung ,
+                                             :AX_MusterLandesmusterUndVergleichsstueck ;
                                  rdfs:range xsd:integer .
 
 
@@ -473,6 +638,24 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                                              rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dachform
+:dachform rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AX_Bauteil ;
+          rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellung
+:darstellung rdf:type owl:DatatypeProperty ;
+             rdfs:domain :AX_Gebaeudeausgestaltung ;
+             rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellungsprioritaet
+:darstellungsprioritaet rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :AP_GPO ;
+                        rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dateTime
 :dateTime rdf:type owl:DatatypeProperty ;
           rdfs:domain :LI_ProcessStep ;
@@ -482,13 +665,19 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datensatznummer
 :datensatznummer rdf:type owl:DatatypeProperty ;
                  rdfs:domain :AX_GeoreferenzierteGebaeudeadresse ;
-                 rdfs:range xsd:integer .
+                 rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datumAnordnung
+:datumAnordnung rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_BauRaumOderBodenordnungsrecht ;
+                rdfs:range xsd:date .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datumDerLetztenUeberpruefung
 :datumDerLetztenUeberpruefung rdf:type owl:DatatypeProperty ;
                               rdfs:domain :AX_TatsaechlicheNutzung ;
-                              rdfs:range xsd:date .
+                              rdfs:range xsd:dateTime .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#description
@@ -496,6 +685,24 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
              rdfs:domain :LI_ProcessStep ,
                          :LI_Source ;
              rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#drehwinkel
+:drehwinkel rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AP_PTO ;
+            rdfs:range xsd:double .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durchfahrtshoehe
+:durchfahrtshoehe rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :AX_Bauteil ;
+                  rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#eigentuemerart
+:eigentuemerart rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_Namensnummer ;
+                rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#endet
@@ -506,8 +713,15 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#entstehungsartOderKlimastufeWasserverhaeltnisse
 :entstehungsartOderKlimastufeWasserverhaeltnisse rdf:type owl:DatatypeProperty ;
-                                                 rdfs:domain :AX_Bodenschaetzung ;
+                                                 rdfs:domain :AX_Bodenschaetzung ,
+                                                             :AX_MusterLandesmusterUndVergleichsstueck ;
                                                  rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#festgestellterGrenzpunkt
+:festgestellterGrenzpunkt rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :AX_Grenzpunkt ;
+                          rdfs:range xsd:boolean .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurnummer
@@ -516,10 +730,22 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
             rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksfolge
+:flurstuecksfolge rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :AX_Flurstueck ;
+                  rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstueckskennzeichen
 :flurstueckskennzeichen rdf:type owl:DatatypeProperty ;
                         rdfs:domain :AX_Flurstueck ;
                         rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#foerdergut
+:foerdergut rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AX_IndustrieUndGewerbeflaeche ;
+            rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#fontSperrung
@@ -528,10 +754,18 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
               rdfs:range xsd:double .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#fortfuehrungsart
+:fortfuehrungsart rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :AX_HistorischesFlurstueckALB ;
+                  rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#funktion
 :funktion rdf:type owl:DatatypeProperty ;
-          rdfs:domain :AX_SportFreizeitUndErholungsflaeche ,
-                      :AX_Strassenverkehr ;
+          rdfs:domain :AX_SchutzgebietNachWasserrecht ,
+                      :AX_SportFreizeitUndErholungsflaeche ,
+                      :AX_Strassenverkehr ,
+                      :AX_TatsaechlicheNutzung ;
           rdfs:range xsd:integer .
 
 
@@ -539,6 +773,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :gebaeudefunktion rdf:type owl:DatatypeProperty ;
                   rdfs:domain :AX_Gebaeude ;
                   rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gebaeudekennzeichen
+:gebaeudekennzeichen rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :AX_Gebaeude ;
+                     rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#geburtsdatum
@@ -551,6 +791,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :geburtsname rdf:type owl:DatatypeProperty ;
              rdfs:domain :AX_Person ;
              rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung
+:gemarkung rdf:type owl:DatatypeProperty ;
+           rdfs:domain :AX_GemarkungsteilFlur ;
+           rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkungsnummer
@@ -569,6 +815,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :gemeinde rdf:type owl:DatatypeProperty ;
           rdfs:domain :AX_Gemeindekennzeichen ;
           rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindeflaeche
+:gemeindeflaeche rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :AX_KommunalesGebiet ;
+                 rdfs:range xsd:double .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#genauigkeitsstufe
@@ -609,6 +861,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
             rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#jahreszahl
+:jahreszahl rdf:type owl:DatatypeProperty ;
+            rdfs:domain :AX_Bodenschaetzung ;
+            rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kartendarstellung
 :kartendarstellung rdf:type owl:DatatypeProperty ;
                    rdfs:domain :AX_Punktort ;
@@ -627,6 +885,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                    rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#klassifizierung
+:klassifizierung rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :AX_Bewertung ;
+                 rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#koordinatenstatus
 :koordinatenstatus rdf:type owl:DatatypeProperty ;
                    rdfs:domain :AX_Punktort ;
@@ -641,7 +905,8 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kulturart
 :kulturart rdf:type owl:DatatypeProperty ;
-           rdfs:domain :AX_Bodenschaetzung ;
+           rdfs:domain :AX_Bodenschaetzung ,
+                       :AX_MusterLandesmusterUndVergleichsstueck ;
            rdfs:range xsd:integer .
 
 
@@ -649,6 +914,27 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :lage rdf:type owl:DatatypeProperty ;
       rdfs:domain :AX_VerschluesselteLagebezeichnung ;
       rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lageZurErdoberflaeche
+:lageZurErdoberflaeche rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :AX_Bauteil ,
+                                   :AX_Transportanlage ,
+                                   :AX_VorratsbehaelterSpeicherbauwerk ;
+                       rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagergut
+:lagergut rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AX_Halde ,
+                      :AX_IndustrieUndGewerbeflaeche ;
+          rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagezuverlaessigkeit
+:lagezuverlaessigkeit rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :AX_DQPunktort ;
+                      rdfs:range xsd:boolean .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#land
@@ -663,10 +949,34 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                 rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerBuchungsstelle
+:laufendeNummerDerBuchungsstelle rdf:type owl:DatatypeProperty ;
+                                 rdfs:domain :AX_Buchung_HistorischesFlurstueck ;
+                                 rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerFortfuehrung
+:laufendeNummerDerFortfuehrung rdf:type owl:DatatypeProperty ;
+                               rdfs:domain :AX_HistorischesFlurstueckALB ;
+                               rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerNachDIN1421
 :laufendeNummerNachDIN1421 rdf:type owl:DatatypeProperty ;
                            rdfs:domain :AX_Namensnummer ;
-                           rdfs:range xsd:integer .
+                           rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#merkmal
+:merkmal rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_MusterLandesmusterUndVergleichsstueck ;
+         rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachfolgerFlurstueckskennzeichen
+:nachfolgerFlurstueckskennzeichen rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :AX_HistorischesFlurstueckALB ;
+                                  rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachnameOderFirma
@@ -677,16 +987,38 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#name
 :name rdf:type owl:DatatypeProperty ;
-      rdfs:domain :AX_BauRaumOderBodenordnungsrecht ;
+      rdfs:domain :AX_BauwerkeEinrichtungenUndSonstigeAngaben ,
+                  :AX_TatsaechlicheNutzung ,
+                  :Nutzungsbeschraenkungen ;
       rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#namensbestandteil
+:namensbestandteil rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :AX_Person ;
+                   rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nenner
 :nenner rdf:type owl:DatatypeProperty ;
         rdfs:subPropertyOf owl:topDataProperty ;
-        rdfs:domain :AX_Flurstuecksnummer ;
+        rdfs:domain :AX_Anteil ,
+                    :AX_Flurstuecksnummer ;
         rdfs:range xsd:string ;
         owl:propertyDisjointWith :zaehler .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummer
+:nummer rdf:type owl:DatatypeProperty ;
+        rdfs:domain :AX_AndereFestlegungNachWasserrecht ,
+                    :AX_MusterLandesmusterUndVergleichsstueck ;
+        rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDerBahnstrecke
+:nummerDerBahnstrecke rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :AX_Bahnverkehr ;
+                      rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDesGrablochs
@@ -695,9 +1027,43 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                     rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDesSchutzgebietes
+:nummerDesSchutzgebietes rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :AX_SchutzgebietNachWasserrecht ;
+                         rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerImAufteilungsplan
+:nummerImAufteilungsplan rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :AX_Buchungsstelle ;
+                         rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerierungsbezirk
+:nummerierungsbezirk rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :AX_KennzifferGrabloch ;
+                     rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nutzung
+:nutzung rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_Flugverkehr ,
+                     :AX_Hafenbecken ;
+         rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#oberflaechenmaterial
+:oberflaechenmaterial rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :AX_UnlandVegetationsloseFlaeche ;
+                      rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#objekthoehe
 :objekthoehe rdf:type owl:DatatypeProperty ;
-             rdfs:domain :AX_Gebaeude ;
+             rdfs:domain :AX_BauwerkOderAnlageFuerIndustrieUndGewerbe ,
+                         :AX_Gebaeude ,
+                         :AX_Turm ,
+                         :AX_VorratsbehaelterSpeicherbauwerk ;
              rdfs:range xsd:double .
 
 
@@ -713,6 +1079,12 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
           rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsnamePost
+:ortsnamePost rdf:type owl:DatatypeProperty ;
+              rdfs:domain :AX_Post ;
+              rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsteil
 :ortsteil rdf:type owl:DatatypeProperty ;
           rdfs:domain :AX_GeoreferenzierteGebaeudeadresse ;
@@ -725,10 +1097,28 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                       rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahl
+:postleitzahl rdf:type owl:DatatypeProperty ;
+              rdfs:domain :AX_Post ;
+              rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahlPostzustellung
 :postleitzahlPostzustellung rdf:type owl:DatatypeProperty ;
                             rdfs:domain :AX_Anschrift ;
                             rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#primaerenergie
+:primaerenergie rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_IndustrieUndGewerbeflaeche ;
+                rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#produkt
+:produkt rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_Transportanlage ;
+         rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#punktkennung
@@ -742,10 +1132,22 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                    rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#rechtsbehelfsverfahren
+:rechtsbehelfsverfahren rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :AX_Flurstueck ;
+                        rdfs:range xsd:boolean .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#regierungsbezirk
 :regierungsbezirk rdf:type owl:DatatypeProperty ;
                   rdfs:domain :AX_Regierungsbezirk_Schluessel ;
                   rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#relativeHoehe
+:relativeHoehe rdf:type owl:DatatypeProperty ;
+               rdfs:domain :AX_Grenzpunkt ;
+               rdfs:range xsd:double .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#role
@@ -782,10 +1184,35 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
             rdfs:range xsd:double .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeAngaben
+:sonstigeAngaben rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :AX_Bodenschaetzung ,
+                             :AX_MusterLandesmusterUndVergleichsstueck ;
+                 rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeEigenschaft
 :sonstigeEigenschaft rdf:type owl:DatatypeProperty ;
                      rdfs:domain :Punktart ;
                      rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#spannungsebene
+:spannungsebene rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_Leitung ;
+                rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#speicherinhalt
+:speicherinhalt rdf:type owl:DatatypeProperty ;
+                rdfs:domain :AX_VorratsbehaelterSpeicherbauwerk ;
+                rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sportart
+:sportart rdf:type owl:DatatypeProperty ;
+          rdfs:domain :AX_BauwerkOderAnlageFuerSportFreizeitUndErholung ;
+          rdfs:range xsd:integer .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#stelle
@@ -807,15 +1234,47 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
          rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenname
+:strassenname rdf:type owl:DatatypeProperty ;
+              rdfs:domain :AX_Post ;
+              rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenschluessel
 :strassenschluessel rdf:type owl:DatatypeProperty ;
                     rdfs:domain :AX_GeoreferenzierteGebaeudeadresse ;
                     rdfs:range xsd:integer .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#telefon
+:telefon rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_Anschrift ;
+         rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#unverschluesselt
+:unverschluesselt rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :AX_Lagebezeichnung ;
+                  rdfs:range xsd:string .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#value
+:value rdf:type owl:DatatypeProperty ;
+       rdfs:domain :DQ_QuantitativeResult ;
+       rdfs:range xsd:double .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#valueUnit
+:valueUnit rdf:type owl:DatatypeProperty ;
+           rdfs:domain :DQ_QuantitativeResult ;
+           rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vegetationsmerkmal
 :vegetationsmerkmal rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :AX_Landwirtschaft ;
+                    rdfs:domain :AX_Gehoelz ,
+                                :AX_Landwirtschaft ,
+                                :AX_Wald ;
                     rdfs:range xsd:integer .
 
 
@@ -831,10 +1290,22 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                       rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vertrauenswuerdigkeit
+:vertrauenswuerdigkeit rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :AX_DQPunktort ;
+                       rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verwaltungsgemeinschaft
 :verwaltungsgemeinschaft rdf:type owl:DatatypeProperty ;
                          rdfs:domain :AX_Verwaltungsgemeinschaft_Schluessel ;
                          rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorgaengerFlurstueckskennzeichen
+:vorgaengerFlurstueckskennzeichen rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :AX_HistorischesFlurstueckALB ;
+                                  rdfs:range xsd:string .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorname
@@ -843,9 +1314,16 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
          rdfs:range xsd:string .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weitereAdressen
+:weitereAdressen rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :AX_Anschrift ;
+                 rdfs:range xsd:string .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zaehler
 :zaehler rdf:type owl:DatatypeProperty ;
-         rdfs:domain :AX_Flurstuecksnummer ;
+         rdfs:domain :AX_Anteil ,
+                     :AX_Flurstuecksnummer ;
          rdfs:range xsd:string .
 
 
@@ -855,10 +1333,38 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                         rdfs:range xsd:date .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeitpunktDerEntstehungDesBezugsflurstuecks
+:zeitpunktDerEntstehungDesBezugsflurstuecks rdf:type owl:DatatypeProperty ;
+                                            rdfs:domain :AX_HistorischesFlurstueckALB ;
+                                            rdfs:range xsd:date .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zone
+:zone rdf:type owl:DatatypeProperty ;
+      rdfs:domain :AX_Schutzzone ;
+      rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustand
+:zustand rdf:type owl:DatatypeProperty ;
+         rdfs:domain :AX_BauwerkeEinrichtungenUndSonstigeAngaben ,
+                     :AX_TatsaechlicheNutzung ;
+         rdfs:range xsd:integer .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustandsstufeOderBodenstufe
 :zustandsstufeOderBodenstufe rdf:type owl:DatatypeProperty ;
-                             rdfs:domain :AX_Bodenschaetzung ;
+                             rdfs:domain :AX_Bodenschaetzung ,
+                                         :AX_MusterLandesmusterUndVergleichsstueck ;
                              rdfs:range xsd:integer .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zweitname
+:zweitname rdf:type owl:DatatypeProperty ;
+           rdfs:domain :AX_Bahnverkehr ,
+                       :AX_Platz ,
+                       :AX_Wohnplatz ;
+           rdfs:range xsd:string .
 
 
 #################################################################
@@ -876,7 +1382,11 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse
 :ALKIS_Klasse rdf:type owl:Class ;
               rdfs:subClassOf :ALKIS_Klasse ,
-                              owl:Thing .
+                              owl:Thing ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty geo:hasGeometry ;
+                                owl:allValuesFrom geo:Geometry
+                              ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_Darstellung
@@ -899,8 +1409,11 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :dientZurDarstellungVon ;
                           owl:allValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( :AX_Flurstueck
+                                              owl:unionOf ( :AX_Bodenschaetzung
+                                                            :AX_Flurstueck
+                                                            :AX_GemarkungsteilFlur
                                                             :AX_GrablochDerBodenschaetzung
+                                                            :AX_LagebezeichnungOhneHausnummer
                                                           )
                                             ]
                         ] .
@@ -918,20 +1431,17 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PTO
 :AP_PTO rdf:type owl:Class ;
-        rdfs:subClassOf :AP_TPO ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :dientZurDarstellungVon ;
-                          owl:allValuesFrom [ rdf:type owl:Class ;
-                                              owl:unionOf ( :AX_Bodenschaetzung
-                                                            :AX_Flurstueck
-                                                          )
-                                            ]
-                        ] .
+        rdfs:subClassOf :AP_TPO .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_TPO
 :AP_TPO rdf:type owl:Class ;
         rdfs:subClassOf :AP_GPO .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_AndereFestlegungNachWasserrecht
+:AX_AndereFestlegungNachWasserrecht rdf:type owl:Class ;
+                                    rdfs:subClassOf :Nutzungsbeschraenkungen .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anschrift
@@ -944,14 +1454,86 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                               ] .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil
+:AX_Anteil rdf:type owl:Class ;
+           rdfs:subClassOf :ALKIS_Klasse .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Aufnahmepunkt
+:AX_Aufnahmepunkt rdf:type owl:Class ;
+                  rdfs:subClassOf :Punktart ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :hat ;
+                                    owl:allValuesFrom :AX_Sicherungspunkt
+                                  ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr
+:AX_Bahnverkehr rdf:type owl:Class ;
+                rdfs:subClassOf :AX_TatsaechlicheNutzung ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty :bezeichnung ;
+                                  owl:allValuesFrom :AX_Lagebezeichnung
+                                ] .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht
 :AX_BauRaumOderBodenordnungsrecht rdf:type owl:Class ;
                                   rdfs:subClassOf :Nutzungsbeschraenkungen .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil
+:AX_Bauteil rdf:type owl:Class ;
+            rdfs:subClassOf :ALKIS_Klasse ,
+                            :AX_Gebaeude .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImGewaesserbereich
+:AX_BauwerkImGewaesserbereich rdf:type owl:Class ;
+                              rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImVerkehrsbereich
+:AX_BauwerkImVerkehrsbereich rdf:type owl:Class ;
+                             rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerIndustrieUndGewerbe
+:AX_BauwerkOderAnlageFuerIndustrieUndGewerbe rdf:type owl:Class ;
+                                             rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerSportFreizeitUndErholung
+:AX_BauwerkOderAnlageFuerSportFreizeitUndErholung rdf:type owl:Class ;
+                                                  rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben
+:AX_BauwerkeEinrichtungenUndSonstigeAngaben rdf:type owl:Class ;
+                                            rdfs:subClassOf :ALKIS_Klasse ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :qualitaetsangaben ;
+                                                              owl:allValuesFrom :AX_DQMitDatenerhebung
+                                                            ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bergbaubetrieb
+:AX_Bergbaubetrieb rdf:type owl:Class ;
+                   rdfs:subClassOf :AX_TatsaechlicheNutzung ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :bezeichnung ;
+                                     owl:allValuesFrom :AX_Lagebezeichnung
+                                   ] .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereFlurstuecksgrenze
 :AX_BesondereFlurstuecksgrenze rdf:type owl:Class ;
                                rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereGebaeudelinie
+:AX_BesondereGebaeudelinie rdf:type owl:Class ;
+                           rdfs:subClassOf :ALKIS_Klasse .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondererBauwerkspunkt
@@ -964,21 +1546,53 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                             rdfs:subClassOf :Punktart .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondererTopographischerPunkt
+:AX_BesondererTopographischerPunkt rdf:type owl:Class ;
+                                   rdfs:subClassOf :Punktart .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bewertung
+:AX_Bewertung rdf:type owl:Class ;
+              rdfs:subClassOf :ALKIS_Klasse ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :qualitaetsangaben ;
+                                owl:allValuesFrom :AX_DQMitDatenerhebung
+                              ] .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung
 :AX_Bodenschaetzung rdf:type owl:Class ;
                     rdfs:subClassOf :ALKIS_Klasse .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchung_HistorischesFlurstueck
+:AX_Buchung_HistorischesFlurstueck rdf:type owl:Class ;
+                                   rdfs:subClassOf :AX_Buchungsblatt ,
+                                                   :AX_Buchungsstelle .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblatt
 :AX_Buchungsblatt rdf:type owl:Class ;
                   rdfs:subClassOf :ALKIS_Klasse ,
                                   ladm:Source ,
-                                  calathe:LA_Source .
+                                  calathe:LA_Source ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :buchungsblattbezirk ;
+                                    owl:someValuesFrom :AX_Buchungsblattbezirk_Schluessel
+                                  ] ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :gehoertZu ;
+                                    owl:allValuesFrom :AX_Dienststelle_Schluessel
+                                  ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk
 :AX_Buchungsblattbezirk rdf:type owl:Class ;
                         rdfs:subClassOf :AdministrativeEinheit ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty :gehoertZu ;
+                                          owl:someValuesFrom :AX_Dienststelle_Schluessel
+                                        ] ,
                                         [ rdf:type owl:Restriction ;
                                           owl:onProperty :buchungsblattbezirk_schluessel ;
                                           owl:allValuesFrom :AX_Buchungsblattbezirk_Schluessel
@@ -987,16 +1601,32 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk_Schluessel
 :AX_Buchungsblattbezirk_Schluessel rdf:type owl:Class ;
-                                   rdfs:subClassOf :Schluessel ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :bundesland_schluessel ;
-                                                     owl:someValuesFrom :AX_Bundesland_Schluessel
-                                                   ] .
+                                   rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle
 :AX_Buchungsstelle rdf:type owl:Class ;
-                   rdfs:subClassOf :ALKIS_Klasse .
+                   rdfs:subClassOf :ALKIS_Klasse ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :an ;
+                                     owl:allValuesFrom :AX_Buchungsstelle
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :beziehtSichAuchAuf ;
+                                     owl:allValuesFrom :AX_Buchungsblatt
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :durch ;
+                                     owl:allValuesFrom :AX_Buchungsstelle
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :verweistAuf ;
+                                     owl:allValuesFrom :AX_Flurstueck
+                                   ] ,
+                                   [ rdf:type owl:Restriction ;
+                                     owl:onProperty :zu ;
+                                     owl:allValuesFrom :AX_Buchungsstelle
+                                   ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bundesland
@@ -1022,7 +1652,11 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort
-:AX_DQPunktort rdf:type owl:Class .
+:AX_DQPunktort rdf:type owl:Class ;
+               rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                 owl:onProperty :genauigkeitswert ;
+                                 owl:allValuesFrom :DQ_RelativeInternalPositionalAccuracy
+                               ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Denkmalschutzrecht
@@ -1035,23 +1669,34 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                  rdfs:subClassOf :ALKIS_Klasse ,
                                  calathe:GovernmentalOrganisation ,
                                  [ rdf:type owl:Restriction ;
-                                   owl:onProperty :dienststelle_schluessel ;
+                                   owl:onProperty :schluessel ;
                                    owl:someValuesFrom :AX_Dienststelle_Schluessel
                                  ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel
 :AX_Dienststelle_Schluessel rdf:type owl:Class ;
-                            rdfs:subClassOf :Schluessel ,
-                                            [ rdf:type owl:Restriction ;
-                                              owl:onProperty :bundesland_schluessel ;
-                                              owl:someValuesFrom :AX_Bundesland_Schluessel
-                                            ] .
+                            rdfs:subClassOf :Schluessel .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheBesondererFunktionalerPraegung
+:AX_FlaecheBesondererFunktionalerPraegung rdf:type owl:Class ;
+                                          rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheGemischterNutzung
 :AX_FlaecheGemischterNutzung rdf:type owl:Class ;
                              rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Fliessgewaesser
+:AX_Fliessgewaesser rdf:type owl:Class ;
+                    rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr
+:AX_Flugverkehr rdf:type owl:Class ;
+                rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck
@@ -1060,8 +1705,25 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                                    calathe:CadastralParcel ;
                rdfs:subClassOf :ALKIS_Klasse ,
                                [ rdf:type owl:Restriction ;
+                                 owl:onProperty :gemarkung ;
+                                 owl:someValuesFrom :AX_Gemarkung_Schluessel
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :gehoertAnteiligZu ;
+                                 owl:allValuesFrom :AX_Flurstueck
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :gemeindezugehoerigkeit ;
+                                 owl:allValuesFrom :AX_Gemeindekennzeichen
+                               ] ,
+                               [ rdf:type owl:Restriction ;
                                  owl:onProperty :zeigtAuf ;
-                                 owl:someValuesFrom :AX_LagebezeichnungOhneHausnummer
+                                 owl:allValuesFrom :AX_LagebezeichnungOhneHausnummer
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :istGebucht ;
+                                 owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                 owl:onClass :AX_Buchungsstelle
                                ] .
 
 
@@ -1069,18 +1731,37 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :AX_Flurstuecksnummer rdf:type owl:Class .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Friedhof
+:AX_Friedhof rdf:type owl:Class ;
+             rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude
 :AX_Gebaeude rdf:type owl:Class ;
              rdfs:subClassOf :ALKIS_Klasse ,
                              calathe:Construction ,
                              [ rdf:type owl:Restriction ;
-                               owl:onProperty :zeigtAuf ;
-                               owl:someValuesFrom :AX_LagebezeichnungMitHausnummer
-                             ] ,
-                             [ rdf:type owl:Restriction ;
                                owl:onProperty :qualitaetsangaben ;
                                owl:allValuesFrom :AX_DQMitDatenerhebung
+                             ] ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :zeigtAuf ;
+                               owl:allValuesFrom :AX_LagebezeichnungMitHausnummer
                              ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeudeausgestaltung
+:AX_Gebaeudeausgestaltung rdf:type owl:Class ;
+                          rdfs:subClassOf :ALKIS_Klasse ,
+                                          [ rdf:type owl:Restriction ;
+                                            owl:onProperty :zeigtAuf ;
+                                            owl:someValuesFrom :AX_Gebaeude
+                                          ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gehoelz
+:AX_Gehoelz rdf:type owl:Class ;
+            rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung
@@ -1098,11 +1779,7 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel
 :AX_Gemarkung_Schluessel rdf:type owl:Class ;
-                         rdfs:subClassOf :Schluessel ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty :bundesland_schluessel ;
-                                           owl:someValuesFrom :AX_Bundesland_Schluessel
-                                         ] .
+                         rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur
@@ -1116,11 +1793,7 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur_Schluessel
 :AX_GemarkungsteilFlur_Schluessel rdf:type owl:Class ;
-                                  rdfs:subClassOf :Schluessel ,
-                                                  [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :gemarkung_schluessel ;
-                                                    owl:someValuesFrom :AX_Gemarkung_Schluessel
-                                                  ] .
+                                  rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeinde
@@ -1138,16 +1811,20 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen
 :AX_Gemeindekennzeichen rdf:type owl:Class ;
-                        rdfs:subClassOf :Schluessel ,
-                                        [ rdf:type owl:Restriction ;
-                                          owl:onProperty :kreis_schluessel ;
-                                          owl:someValuesFrom :AX_Kreis_Schluessel
-                                        ] .
+                        rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse
 :AX_GeoreferenzierteGebaeudeadresse rdf:type owl:Class ;
-                                    rdfs:subClassOf :ALKIS_Klasse .
+                                    rdfs:subClassOf :ALKIS_Klasse ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :gemeindezugehoerigkeit ;
+                                                      owl:allValuesFrom :AX_Gemeindekennzeichen
+                                                    ] ,
+                                                    [ rdf:type owl:Restriction ;
+                                                      owl:onProperty :postalischeAdresse ;
+                                                      owl:allValuesFrom :AX_Post
+                                                    ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GrablochDerBodenschaetzung
@@ -1161,17 +1838,60 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                                calathe:BoundaryMark .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Hafenbecken
+:AX_Hafenbecken rdf:type owl:Class ;
+                rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Halde
+:AX_Halde rdf:type owl:Class ;
+          rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Heide
+:AX_Heide rdf:type owl:Class ;
+          rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB
+:AX_HistorischesFlurstueckALB rdf:type owl:Class ;
+                              rdfs:subClassOf :AX_Flurstueck ,
+                                              [ rdf:type owl:Restriction ;
+                                                owl:onProperty :buchung ;
+                                                owl:someValuesFrom :AX_Buchung_HistorischesFlurstueck
+                                              ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche
+:AX_IndustrieUndGewerbeflaeche rdf:type owl:Class ;
+                               rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KennzifferGrabloch
 :AX_KennzifferGrabloch rdf:type owl:Class ;
                        rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                         owl:onProperty :gemarkung_schluessel ;
-                                         owl:someValuesFrom :AX_Gemarkung_Schluessel
+                                         owl:onProperty :schluessel ;
+                                         owl:allValuesFrom :AX_Gemarkung_Schluessel
                                        ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachStrassenrecht
 :AX_KlassifizierungNachStrassenrecht rdf:type owl:Class ;
                                      rdfs:subClassOf :Nutzungsbeschraenkungen .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachWasserrecht
+:AX_KlassifizierungNachWasserrecht rdf:type owl:Class ;
+                                   rdfs:subClassOf :Nutzungsbeschraenkungen .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KommunalesGebiet
+:AX_KommunalesGebiet rdf:type owl:Class ;
+                     rdfs:subClassOf :ALKIS_Klasse ,
+                                     [ rdf:type owl:Restriction ;
+                                       owl:onProperty :gemeindekennzeichen ;
+                                       owl:someValuesFrom :AX_Gemeindekennzeichen
+                                     ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KreisRegion
@@ -1189,11 +1909,7 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Kreis_Schluessel
 :AX_Kreis_Schluessel rdf:type owl:Class ;
-                     rdfs:subClassOf :Schluessel ,
-                                     [ rdf:type owl:Restriction ;
-                                       owl:onProperty :regierungsbezirk_schluessel ;
-                                       owl:someValuesFrom :AX_Regierungsbezirk_Schluessel
-                                     ] .
+                     rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Lagebezeichnung
@@ -1204,7 +1920,7 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :AX_LagebezeichnungKatalogeintrag rdf:type owl:Class ;
                                   rdfs:subClassOf :ALKIS_Klasse ,
                                                   [ rdf:type owl:Restriction ;
-                                                    owl:onProperty :lagebezeichnungKatalogeintrag_schluessel ;
+                                                    owl:onProperty :schluessel ;
                                                     owl:someValuesFrom :AX_VerschluesselteLagebezeichnung
                                                   ] .
 
@@ -1224,9 +1940,41 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                    rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Leitung
+:AX_Leitung rdf:type owl:Class ;
+            rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Moor
+:AX_Moor rdf:type owl:Class ;
+         rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck
+:AX_MusterLandesmusterUndVergleichsstueck rdf:type owl:Class ;
+                                          rdfs:subClassOf :ALKIS_Klasse ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty :qualitaetsangaben ;
+                                                            owl:allValuesFrom :AX_DQMitDatenerhebung
+                                                          ] .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer
 :AX_Namensnummer rdf:type owl:Class ;
-                 rdfs:subClassOf :ALKIS_Klasse .
+                 rdfs:subClassOf :ALKIS_Klasse ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :anteil ;
+                                   owl:allValuesFrom :AX_Anteil
+                                 ] ,
+                                 [ rdf:type owl:Restriction ;
+                                   owl:onProperty :bestehtAusRechtsverhaeltnissenZu ;
+                                   owl:allValuesFrom :AX_Namensnummer
+                                 ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_NaturUmweltOderBodenschutzrecht
+:AX_NaturUmweltOderBodenschutzrecht rdf:type owl:Class ;
+                                    rdfs:subClassOf :Nutzungsbeschraenkungen .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person
@@ -1238,6 +1986,15 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                              owl:onProperty :qualitaetsangaben ;
                              owl:allValuesFrom :AX_DQOhneDatenerhebung
                            ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Platz
+:AX_Platz rdf:type owl:Class ;
+          rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post
+:AX_Post rdf:type owl:Class .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Punktort
@@ -1279,11 +2036,31 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Regierungsbezirk_Schluessel
 :AX_Regierungsbezirk_Schluessel rdf:type owl:Class ;
-                                rdfs:subClassOf :Schluessel ,
-                                                [ rdf:type owl:Restriction ;
-                                                  owl:onProperty :bundesland_schluessel ;
-                                                  owl:someValuesFrom :AX_Bundesland_Schluessel
-                                                ] .
+                                rdfs:subClassOf :Schluessel .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schiffsverkehr
+:AX_Schiffsverkehr rdf:type owl:Class ;
+                   rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht
+:AX_SchutzgebietNachWasserrecht rdf:type owl:Class ;
+                                rdfs:subClassOf :Nutzungsbeschraenkungen .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schutzzone
+:AX_Schutzzone rdf:type owl:Class ;
+               rdfs:subClassOf :AX_SchutzgebietNachWasserrecht ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :istTeilVon ;
+                                 owl:someValuesFrom :AX_SchutzgebietNachWasserrecht
+                               ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sicherungspunkt
+:AX_Sicherungspunkt rdf:type owl:Class ;
+                    rdfs:subClassOf :Punktart .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigeEigenschaften_Flurstueck
@@ -1298,11 +2075,21 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesBauwerkOderSonstigeEinrichtung
 :AX_SonstigesBauwerkOderSonstigeEinrichtung rdf:type owl:Class ;
                                             rdfs:subClassOf :ALKIS_Klasse ,
+                                                            :AX_BauwerkeEinrichtungenUndSonstigeAngaben ,
                                                             calathe:Construction ,
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :gehoertZuBauwerk ;
+                                                              owl:allValuesFrom :AX_BauwerkeEinrichtungenUndSonstigeAngaben
+                                                            ] ,
                                                             [ rdf:type owl:Restriction ;
                                                               owl:onProperty :qualitaetsangaben ;
                                                               owl:allValuesFrom :AX_DQMitDatenerhebung
                                                             ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesRecht
+:AX_SonstigesRecht rdf:type owl:Class ;
+                   rdfs:subClassOf :Nutzungsbeschraenkungen .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SportFreizeitUndErholungsflaeche
@@ -1321,19 +2108,48 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                                     calathe:TransportNetwork .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sumpf
+:AX_Sumpf rdf:type owl:Class ;
+          rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TagebauGrubeSteinbruch
+:AX_TagebauGrubeSteinbruch rdf:type owl:Class ;
+                           rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung
 :AX_TatsaechlicheNutzung rdf:type owl:Class ;
                          rdfs:subClassOf :ALKIS_Klasse ,
-                                         ladm:SpatialUnit .
+                                         ladm:SpatialUnit ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :qualitaetsangaben ;
+                                           owl:allValuesFrom :AX_DQMitDatenerhebung
+                                         ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Transportanlage
+:AX_Transportanlage rdf:type owl:Class ;
+                    rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Turm
+:AX_Turm rdf:type owl:Class ;
+         rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :zeigtAuf ;
+                           owl:allValuesFrom :AX_LagebezeichnungMitHausnummer
+                         ] .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_UnlandVegetationsloseFlaeche
+:AX_UnlandVegetationsloseFlaeche rdf:type owl:Class ;
+                                 rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VerschluesselteLagebezeichnung
 :AX_VerschluesselteLagebezeichnung rdf:type owl:Class ;
-                                   rdfs:subClassOf :Schluessel ,
-                                                   [ rdf:type owl:Restriction ;
-                                                     owl:onProperty :gemeindekennzeichen ;
-                                                     owl:someValuesFrom :AX_Gemeindekennzeichen
-                                                   ] .
+                                   rdfs:subClassOf :Schluessel .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Verwaltungsgemeinschaft
@@ -1347,11 +2163,17 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Verwaltungsgemeinschaft_Schluessel
 :AX_Verwaltungsgemeinschaft_Schluessel rdf:type owl:Class ;
-                                       rdfs:subClassOf :Schluessel ,
-                                                       [ rdf:type owl:Restriction ;
-                                                         owl:onProperty :kreis_schluessel ;
-                                                         owl:someValuesFrom :AX_Kreis_Schluessel
-                                                       ] .
+                                       rdfs:subClassOf :Schluessel .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk
+:AX_VorratsbehaelterSpeicherbauwerk rdf:type owl:Class ;
+                                    rdfs:subClassOf :AX_BauwerkeEinrichtungenUndSonstigeAngaben .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wald
+:AX_Wald rdf:type owl:Class ;
+         rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Weg
@@ -1365,6 +2187,11 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                    rdfs:subClassOf :AX_TatsaechlicheNutzung .
 
 
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wohnplatz
+:AX_Wohnplatz rdf:type owl:Class ;
+              rdfs:subClassOf :AX_TatsaechlicheNutzung .
+
+
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit
 :AdministrativeEinheit rdf:type owl:Class ;
                        owl:equivalentClass calathe:AdministrativeUnit ;
@@ -1372,12 +2199,24 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
                                        ladm:SpatialUnitGroup ,
                                        [ rdf:type owl:Restriction ;
                                          owl:onProperty :schluessel ;
-                                         owl:someValuesFrom :Schluessel
+                                         owl:allValuesFrom :Schluessel
                                        ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#CI_ResponsibleParty
 :CI_ResponsibleParty rdf:type owl:Class .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult
+:DQ_QuantitativeResult rdf:type owl:Class .
+
+
+###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_RelativeInternalPositionalAccuracy
+:DQ_RelativeInternalPositionalAccuracy rdf:type owl:Class ;
+                                       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                         owl:onProperty :result ;
+                                                         owl:allValuesFrom :DQ_QuantitativeResult
+                                                       ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#LI_Lineage
@@ -1396,7 +2235,15 @@ ngeo:asWKT rdfs:range geo:wktLiteral .
 :Nutzungsbeschraenkungen rdf:type owl:Class ;
                          owl:equivalentClass ladm:Restriction ,
                                              calathe:LA_Restriction ;
-                         rdfs:subClassOf :ALKIS_Klasse .
+                         rdfs:subClassOf :ALKIS_Klasse ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :ausfuehrendeStelle ;
+                                           owl:allValuesFrom :AX_Dienststelle_Schluessel
+                                         ] ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty :qualitaetsangaben ;
+                                           owl:allValuesFrom :AX_DQMitDatenerhebung
+                                         ] .
 
 
 ###  http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Punktart

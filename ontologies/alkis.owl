@@ -33,6 +33,30 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#an -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#an">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anteil -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anteil">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ausfuehrendeStelle -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ausfuehrendeStelle">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#benennt -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#benennt">
@@ -42,11 +66,50 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestehtAusRechtsverhaeltnissenZu -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestehtAusRechtsverhaeltnissenZu">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bergbaubetrieb"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungKatalogeintrag"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wald"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beziehtSichAuchAuf -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beziehtSichAuchAuf">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchung -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblatt"/>
-        <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk"/>
     </owl:ObjectProperty>
     
 
@@ -91,6 +154,14 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durch -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durch">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksnummer -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksnummer">
@@ -100,11 +171,26 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertAnteiligZu -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertAnteiligZu">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZu -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZu">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk"/>
-        <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZuBauwerk -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZuBauwerk">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesBauwerkOderSonstigeEinrichtung"/>
     </owl:ObjectProperty>
     
 
@@ -113,7 +199,7 @@
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
-        <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur_Schluessel"/>
     </owl:ObjectProperty>
     
 
@@ -141,7 +227,7 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindekennzeichen -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindekennzeichen">
-        <rdfs:subPropertyOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
+        <owl:equivalentProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeinde"/>
     </owl:ObjectProperty>
     
@@ -152,7 +238,14 @@
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindezugehoerigkeit">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse"/>
-        <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeinde"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#genauigkeitswert -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#genauigkeitswert">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort"/>
     </owl:ObjectProperty>
     
 
@@ -160,6 +253,7 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hat -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hat">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Aufnahmepunkt"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person"/>
         <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anschrift"/>
@@ -228,6 +322,7 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#istGebucht -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#istGebucht">
+        <owl:inverseOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verweistAuf"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
         <rdfs:range rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
     </owl:ObjectProperty>
@@ -299,6 +394,14 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postalischeAdresse -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postalischeAdresse">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#processStep -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#processStep">
@@ -336,6 +439,14 @@
         <rdfs:subPropertyOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Kreis_Schluessel"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Regierungsbezirk"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#result -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#result">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_RelativeInternalPositionalAccuracy"/>
     </owl:ObjectProperty>
     
 
@@ -387,6 +498,14 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verweistAuf -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verweistAuf">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weistAuf -->
 
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weistAuf">
@@ -401,6 +520,15 @@
     <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeudeausgestaltung"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zu -->
+
+    <owl:ObjectProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zu">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
     </owl:ObjectProperty>
     
 
@@ -418,29 +546,7 @@
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
 
     <rdf:Description rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry">
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_LPO"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PPO"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PTO"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereFlurstuecksgrenze"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Denkmalschutzrecht"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheGemischterNutzung"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GrablochDerBodenschaetzung"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachStrassenrecht"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Landwirtschaft"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_PunktortAG"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_PunktortAU"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_PunktortTA"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesBauwerkOderSonstigeEinrichtung"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SportFreizeitUndErholungsflaeche"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_StehendesGewaesser"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Strassenverkehr"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Weg"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wohnbauflaeche"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
     </rdf:Description>
     
 
@@ -464,6 +570,16 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abbaugut -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abbaugut">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bergbaubetrieb"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TagebauGrubeSteinbruch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abmarkung_Marke -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abmarkung_Marke">
@@ -473,10 +589,20 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abweichenderRechtszustand -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#abweichenderRechtszustand">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ackerzahlOderGruenlandzahl -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ackerzahlOderGruenlandzahl">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -491,10 +617,28 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#adressierungszusatz -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#adressierungszusatz">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#advStandardModell -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#advStandardModell">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AA_Modellart"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#akademischerGrad -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#akademischerGrad">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -518,6 +662,15 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittFlurstueck -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittFlurstueck">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigeEigenschaften_Flurstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittNummerAktenzeichen -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#angabenZumAbschnittNummerAktenzeichen">
@@ -531,7 +684,16 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anlass">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anrede -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anrede">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -550,8 +712,18 @@
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#art">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_Darstellung"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_GPO"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigerVermessungspunkt"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerBebauung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerBebauung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheBesondererFunktionalerPraegung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -574,10 +746,55 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerRechtsgemeinschaft -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#artDerRechtsgemeinschaft">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bahnkategorie -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bahnkategorie">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauart -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauart">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#baujahr -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#baujahr">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauweise -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauweise">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauwerksfunktion -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bauwerksfunktion">
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesBauwerkOderSonstigeEinrichtung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -601,6 +818,51 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bemerkungZurAbmarkung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bemerkungZurAbmarkung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Grenzpunkt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschaffenheit -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschaffenheit">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereGebaeudelinie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschreibungDesSondereigentums -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschreibungDesSondereigentums">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschriebDerRechtsgemeinschaft -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beschriebDerRechtsgemeinschaft">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#besonderePunktnummer -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#besonderePunktnummer">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Grenzpunkt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestimmungsland -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestimmungsland">
@@ -613,9 +875,6 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung">
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungKatalogeintrag"/>
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -652,6 +911,7 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bodenart">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -661,6 +921,7 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bodenzahlOderGruenlandgrundzahl">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -693,6 +954,33 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dachform -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dachform">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeudeausgestaltung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellungsprioritaet -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#darstellungsprioritaet">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_GPO"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dateTime -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dateTime">
@@ -706,7 +994,16 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datensatznummer">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datumAnordnung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datumAnordnung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
     </owl:DatatypeProperty>
     
 
@@ -715,7 +1012,7 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#datumDerLetztenUeberpruefung">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
     </owl:DatatypeProperty>
     
 
@@ -726,6 +1023,33 @@
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#LI_ProcessStep"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#LI_Source"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#drehwinkel -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#drehwinkel">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PTO"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durchfahrtshoehe -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durchfahrtshoehe">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#eigentuemerart -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#eigentuemerart">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -743,7 +1067,17 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#entstehungsartOderKlimastufeWasserverhaeltnisse">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#festgestellterGrenzpunkt -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#festgestellterGrenzpunkt">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Grenzpunkt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -757,11 +1091,29 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksfolge -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstuecksfolge">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstueckskennzeichen -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#flurstueckskennzeichen">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#foerdergut -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#foerdergut">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -775,11 +1127,22 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#fortfuehrungsart -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#fortfuehrungsart">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#funktion -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#funktion">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SportFreizeitUndErholungsflaeche"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Strassenverkehr"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -790,6 +1153,15 @@
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gebaeudefunktion">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gebaeudekennzeichen -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gebaeudekennzeichen">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -808,6 +1180,15 @@
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#geburtsname">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -835,6 +1216,15 @@
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeinde">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindeflaeche -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindeflaeche">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KommunalesGebiet"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -895,6 +1285,15 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#jahreszahl -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#jahreszahl">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kartendarstellung -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kartendarstellung">
@@ -922,6 +1321,15 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#klassifizierung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#klassifizierung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bewertung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#koordinatenstatus -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#koordinatenstatus">
@@ -944,6 +1352,7 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kulturart">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -954,6 +1363,36 @@
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lage">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VerschluesselteLagebezeichnung"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lageZurErdoberflaeche -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lageZurErdoberflaeche">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Transportanlage"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagergut -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagergut">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Halde"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagezuverlaessigkeit -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagezuverlaessigkeit">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -976,11 +1415,47 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerBuchungsstelle -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerBuchungsstelle">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchung_HistorischesFlurstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerFortfuehrung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerDerFortfuehrung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerNachDIN1421 -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#laufendeNummerNachDIN1421">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#merkmal -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#merkmal">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachfolgerFlurstueckskennzeichen -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nachfolgerFlurstueckskennzeichen">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -997,7 +1472,18 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#name -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#name">
-        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#namensbestandteil -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#namensbestandteil">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -1007,9 +1493,29 @@
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nenner">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <owl:propertyDisjointWith rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zaehler"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummer -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummer">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_AndereFestlegungNachWasserrecht"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDerBahnstrecke -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDerBahnstrecke">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1023,10 +1529,59 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDesSchutzgebietes -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerDesSchutzgebietes">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerImAufteilungsplan -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerImAufteilungsplan">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerierungsbezirk -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nummerierungsbezirk">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KennzifferGrabloch"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nutzung -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#nutzung">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Hafenbecken"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#oberflaechenmaterial -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#oberflaechenmaterial">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_UnlandVegetationsloseFlaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#objekthoehe -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#objekthoehe">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerIndustrieUndGewerbe"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Turm"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
@@ -1050,6 +1605,15 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsnamePost -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsnamePost">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsteil -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ortsteil">
@@ -1068,11 +1632,38 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahl -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahl">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahlPostzustellung -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postleitzahlPostzustellung">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anschrift"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#primaerenergie -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#primaerenergie">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#produkt -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#produkt">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Transportanlage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -1094,11 +1685,29 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#rechtsbehelfsverfahren -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#rechtsbehelfsverfahren">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#regierungsbezirk -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#regierungsbezirk">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Regierungsbezirk_Schluessel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#relativeHoehe -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#relativeHoehe">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Grenzpunkt"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -1152,11 +1761,48 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeAngaben -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeAngaben">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeEigenschaft -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sonstigeEigenschaft">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Punktart"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#spannungsebene -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#spannungsebene">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Leitung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#speicherinhalt -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#speicherinhalt">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sportart -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#sportart">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerSportFreizeitUndErholung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -1189,6 +1835,15 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenname -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenname">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenschluessel -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#strassenschluessel">
@@ -1198,10 +1853,48 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#telefon -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#telefon">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anschrift"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#unverschluesselt -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#unverschluesselt">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Lagebezeichnung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#value -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#value">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#valueUnit -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#valueUnit">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vegetationsmerkmal -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vegetationsmerkmal">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gehoelz"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Landwirtschaft"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wald"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
@@ -1225,11 +1918,29 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vertrauenswuerdigkeit -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vertrauenswuerdigkeit">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verwaltungsgemeinschaft -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verwaltungsgemeinschaft">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Verwaltungsgemeinschaft_Schluessel"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorgaengerFlurstueckskennzeichen -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#vorgaengerFlurstueckskennzeichen">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1243,9 +1954,19 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weitereAdressen -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#weitereAdressen">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anschrift"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zaehler -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zaehler">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil"/>
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstuecksnummer"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -1261,11 +1982,51 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeitpunktDerEntstehungDesBezugsflurstuecks -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeitpunktDerEntstehungDesBezugsflurstuecks">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zone -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zone">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schutzzone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustand -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustand">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustandsstufeOderBodenstufe -->
 
     <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zustandsstufeOderBodenstufe">
         <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zweitname -->
+
+    <owl:DatatypeProperty rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zweitname">
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Platz"/>
+        <rdfs:domain rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wohnplatz"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -1298,6 +2059,12 @@
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/ont/geosparql#hasGeometry"/>
+                <owl:allValuesFrom rdf:resource="http://www.opengis.net/ont/geosparql#Geometry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1334,8 +2101,11 @@
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
                             <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+                            <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur"/>
                             <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GrablochDerBodenschaetzung"/>
+                            <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungOhneHausnummer"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
@@ -1365,19 +2135,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_PTO">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_TPO"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dientZurDarstellungVon"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung"/>
-                            <rdf:Description rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1386,6 +2143,14 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_TPO">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AP_GPO"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_AndereFestlegungNachWasserrecht -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_AndereFestlegungNachWasserrecht">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
     </owl:Class>
     
 
@@ -1405,6 +2170,42 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Aufnahmepunkt -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Aufnahmepunkt">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Punktart"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#hat"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sicherungspunkt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bahnverkehr">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Lagebezeichnung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauRaumOderBodenordnungsrecht">
@@ -1413,10 +2214,87 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bauteil">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImGewaesserbereich -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImGewaesserbereich">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImVerkehrsbereich -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkImVerkehrsbereich">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerIndustrieUndGewerbe -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerIndustrieUndGewerbe">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerSportFreizeitUndErholung -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkOderAnlageFuerSportFreizeitUndErholung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bergbaubetrieb -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bergbaubetrieb">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bezeichnung"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Lagebezeichnung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereFlurstuecksgrenze -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereFlurstuecksgrenze">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereGebaeudelinie -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondereGebaeudelinie">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
     </owl:Class>
     
 
@@ -1437,10 +2315,41 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondererTopographischerPunkt -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BesondererTopographischerPunkt">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Punktart"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bewertung -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bewertung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bodenschaetzung">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchung_HistorischesFlurstueck -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchung_HistorischesFlurstueck">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblatt"/>
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
     </owl:Class>
     
 
@@ -1451,6 +2360,18 @@
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
         <rdfs:subClassOf rdf:resource="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Source"/>
         <rdfs:subClassOf rdf:resource="http://www.cadastralvocabulary.org/CaLAThe/LA_Source"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk_Schluessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZu"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1459,6 +2380,12 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZu"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchungsblattbezirk_schluessel"/>
@@ -1473,12 +2400,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblattbezirk_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bundesland_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bundesland_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1487,6 +2408,36 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#an"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#beziehtSichAuchAuf"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsblatt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#durch"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#verweistAuf"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zu"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1527,7 +2478,14 @@
 
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort -->
 
-    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort"/>
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQPunktort">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#genauigkeitswert"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_RelativeInternalPositionalAccuracy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -1546,7 +2504,7 @@
         <rdfs:subClassOf rdf:resource="http://www.cadastralvocabulary.org/CaLAThe/GovernmentalOrganisation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#dienststelle_schluessel"/>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
                 <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1558,12 +2516,14 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bundesland_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bundesland_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheBesondererFunktionalerPraegung -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheBesondererFunktionalerPraegung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
     </owl:Class>
     
 
@@ -1571,6 +2531,22 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheGemischterNutzung -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_FlaecheGemischterNutzung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Fliessgewaesser -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Fliessgewaesser">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flugverkehr">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
     </owl:Class>
     
@@ -1584,8 +2560,33 @@
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertAnteiligZu"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindezugehoerigkeit"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungOhneHausnummer"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungOhneHausnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#istGebucht"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchungsstelle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1598,6 +2599,14 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Friedhof -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Friedhof">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude">
@@ -1605,16 +2614,38 @@
         <rdfs:subClassOf rdf:resource="http://www.cadastralvocabulary.org/CaLAThe/Construction"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungMitHausnummer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
                 <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungMitHausnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeudeausgestaltung -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeudeausgestaltung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gebaeude"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gehoelz -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gehoelz">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
     </owl:Class>
     
 
@@ -1643,12 +2674,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bundesland_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bundesland_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1671,12 +2696,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GemarkungsteilFlur_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1705,12 +2724,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kreis_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Kreis_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1719,6 +2732,18 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_GeoreferenzierteGebaeudeadresse">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindezugehoerigkeit"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#postalischeAdresse"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1740,13 +2765,59 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Hafenbecken -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Hafenbecken">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Halde -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Halde">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Heide -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Heide">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_HistorischesFlurstueckALB">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Flurstueck"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#buchung"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Buchung_HistorischesFlurstueck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_IndustrieUndGewerbeflaeche">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KennzifferGrabloch -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KennzifferGrabloch">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemarkung_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel"/>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemarkung_Schluessel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1757,6 +2828,28 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachStrassenrecht">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachWasserrecht -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KlassifizierungNachWasserrecht">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KommunalesGebiet -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_KommunalesGebiet">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindekennzeichen"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1785,12 +2878,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Kreis_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#regierungsbezirk_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Regierungsbezirk_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1807,7 +2894,7 @@
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#lagebezeichnungKatalogeintrag_schluessel"/>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
                 <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VerschluesselteLagebezeichnung"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1839,10 +2926,60 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Leitung -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Leitung">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Moor -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Moor">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_MusterLandesmusterUndVergleichsstueck">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#anteil"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Anteil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bestehtAusRechtsverhaeltnissenZu"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Namensnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_NaturUmweltOderBodenschutzrecht -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_NaturUmweltOderBodenschutzrecht">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
     </owl:Class>
     
 
@@ -1860,6 +2997,20 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Platz -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Platz">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Post"/>
     
 
 
@@ -1925,12 +3076,44 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Regierungsbezirk_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schiffsverkehr -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schiffsverkehr">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schutzzone -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Schutzzone">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#bundesland_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Bundesland_Schluessel"/>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#istTeilVon"/>
+                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SchutzgebietNachWasserrecht"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sicherungspunkt -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sicherungspunkt">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Punktart"/>
     </owl:Class>
     
 
@@ -1953,13 +3136,28 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesBauwerkOderSonstigeEinrichtung">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
         <rdfs:subClassOf rdf:resource="http://www.cadastralvocabulary.org/CaLAThe/Construction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gehoertZuBauwerk"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
                 <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesRecht -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_SonstigesRecht">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Nutzungsbeschraenkungen"/>
     </owl:Class>
     
 
@@ -1989,11 +3187,63 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sumpf -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Sumpf">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TagebauGrubeSteinbruch -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TagebauGrubeSteinbruch">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
         <rdfs:subClassOf rdf:resource="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#SpatialUnit"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Transportanlage -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Transportanlage">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Turm -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Turm">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#zeigtAuf"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_LagebezeichnungMitHausnummer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_UnlandVegetationsloseFlaeche -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_UnlandVegetationsloseFlaeche">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
     </owl:Class>
     
 
@@ -2002,12 +3252,6 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VerschluesselteLagebezeichnung">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#gemeindekennzeichen"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Gemeindekennzeichen"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2030,12 +3274,22 @@
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Verwaltungsgemeinschaft_Schluessel">
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#kreis_schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Kreis_Schluessel"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_VorratsbehaelterSpeicherbauwerk">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_BauwerkeEinrichtungenUndSonstigeAngaben"/>
+    </owl:Class>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wald -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wald">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
     </owl:Class>
     
 
@@ -2057,6 +3311,14 @@
     
 
 
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wohnplatz -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Wohnplatz">
+        <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_TatsaechlicheNutzung"/>
+    </owl:Class>
+    
+
+
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AdministrativeEinheit">
@@ -2066,7 +3328,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#schluessel"/>
-                <owl:someValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#Schluessel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2076,6 +3338,25 @@
     <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#CI_ResponsibleParty -->
 
     <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#CI_ResponsibleParty"/>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult"/>
+    
+
+
+    <!-- http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_RelativeInternalPositionalAccuracy -->
+
+    <owl:Class rdf:about="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_RelativeInternalPositionalAccuracy">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#result"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#DQ_QuantitativeResult"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -2103,6 +3384,18 @@
         <owl:equivalentClass rdf:resource="http://wiki.tudelft.nl/pub/Research/ISO19152/ImplementationMaterial/LADMOntology.owl#Restriction"/>
         <owl:equivalentClass rdf:resource="http://www.cadastralvocabulary.org/CaLAThe/LA_Restriction"/>
         <rdfs:subClassOf rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ALKIS_Klasse"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#ausfuehrendeStelle"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_Dienststelle_Schluessel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#qualitaetsangaben"/>
+                <owl:allValuesFrom rdf:resource="http://github.com/Schi11er/SemanticWebBIMandGIS/blob/master/ontologies/alkis.owl#AX_DQMitDatenerhebung"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
